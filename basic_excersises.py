@@ -27,3 +27,22 @@ def inversa(cadena):
     return cadena_invertida
 
 #print(inversa("estoy probando"))
+
+
+# Escribir una función sum() y una función multip() que sumen y 
+# multipliquen respectivamente todos los números de una lista.
+# Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
+
+def sum(a):
+    suma = 0
+    for i in a:
+        suma = suma + i
+    return suma
+def multi(b):
+    multi=1
+    for i in b:
+        multi *= i
+    return multi
+
+# print(sum([1,2,3,4]))
+# print(multi([1,2,3,4]))
