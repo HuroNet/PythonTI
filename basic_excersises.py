@@ -14,8 +14,6 @@ def verificar_vocal(leter):
         return False
 
 
-# print(verificar_vocal("O"))
-
 # Definir una función inversa() que calcule la inversión de una cadena.
 # Por ejemplo la cadena "estoy probando" debería devolver la cadena "odnaborp yotse"
 
