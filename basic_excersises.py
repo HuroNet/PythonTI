@@ -46,3 +46,11 @@ def multi(b):
 
 # print(sum([1,2,3,4]))
 # print(multi([1,2,3,4]))
+
+# Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. 
+# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx" 
+def generar_n_caracteres(entero, caracter):
+    for i in range(1, entero+1):
+        caracteres=i*caracter
+    return caracteres
+print(generar_n_caracteres(5,"x"))
