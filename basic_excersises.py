@@ -15,7 +15,8 @@ def verificar_vocal(leter):
 
 
 # Definir una función inversa() que calcule la inversión de una cadena.
-# Por ejemplo la cadena "estoy probando" debería devolver la cadena "odnaborp yotse"
+# Por ejemplo la cadena "estoy probando" debería
+#  devolver la cadena "odnaborp yotse"
 
 
 def inversa(cadena):
@@ -31,7 +32,8 @@ def inversa(cadena):
 
 # Escribir una función sum() y una función multip() que sumen y
 # multipliquen respectivamente todos los números de una lista.
-# Por ejemplo: sum([1,2,3,4]) debería devolver 10 y multip([1,2,3,4]) debería devolver 24.
+# Por ejemplo: sum([1,2,3,4]) debería devolver 10 y 
+# multip([1,2,3,4]) debería devolver 24.
 
 
 def sum(a):
@@ -52,7 +54,8 @@ def multi(b):
 # print(multi([1,2,3,4]))
 
 
-# Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n.
+# Definir una función generar_n_caracteres() que tome un entero
+#  n y devuelva el caracter multiplicado por n.
 # Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx"
 def generar_n_caracteres(entero, caracter):
     for i in range(1, entero + 1):
