@@ -62,4 +62,4 @@ def generar_n_caracteres(entero, caracter):
     return caracteres
 
 
-print(generar_n_caracteres(5, "x"))
+# print(generar_n_caracteres(5, "x"))
