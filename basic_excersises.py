@@ -65,16 +65,6 @@ def generar_n_caracteres(entero, caracter):
 
 # print(generar_n_caracteres(5, "x"))
 
-# Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. 
-# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx" 
-
-def generar_caracteres(m,n):
-    for i in range(0,m+1):
-        caracteres = i * n
-        print("los caracteres son:",caracteres)
-    return caracteres
-print(generar_caracteres(5,'x'))
-
 #----------------------------------------
 #Definir una función que calcule la longitud de una lista o una cadena dada.\
 #  (Es cierto que python tiene la función len()  incorporada, pero escribirla
@@ -87,3 +77,22 @@ def longitud( dato):
 
 # print(longitud([1,2,3,5,4]))
 # print(longitud("Hola mundo "))
+
+#------------------------------------------------
+#Escribir una función sum() y una función multip() que sumen y multipliquen
+#  respectivamente todos los números de una lista.
+
+def fun_sum(lista):
+    T_suma=0
+    for i in lista:
+        T_suma=T_suma+i
+    return T_suma
+# print(fun_sum([1,3,5]))
+
+
+
+
+#print(fun_sum([1,3,5]))
+
+#falta hacer la mul con while 
+
