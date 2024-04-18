@@ -76,7 +76,7 @@ def generar_caracteres(m, n):
     return caracteres
 
 
-print(generar_caracteres(5, "x"))
+# print(generar_caracteres(5, "x"))
 
 
 # ----------------------------------------
