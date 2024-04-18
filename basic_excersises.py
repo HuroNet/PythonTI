@@ -93,5 +93,3 @@ def fun_sum(lista):
 
 
 # print(fun_sum([1,3,5]))
-
-
