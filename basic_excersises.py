@@ -84,12 +84,4 @@ def longitud(dato):
 # Escribir una función sum() y una función multip() que sumen y multipliquen
 #  respectivamente todos los números de una lista.
 
-
-def fun_sum(lista):
-    T_suma = 0
-    for i in lista:
-        T_suma = T_suma + i
-    return T_suma
-
-
 # print(fun_sum([1,3,5]))
