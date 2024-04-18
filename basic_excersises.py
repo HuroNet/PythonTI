@@ -135,5 +135,5 @@ def fun_sum(lista):
         T_suma = T_suma + i
     return T_suma
 
-
 # print(fun_sum([1,3,5]))
+
