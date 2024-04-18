@@ -27,7 +27,7 @@ def inversa(cadena):
     return cadena_invertida
 
 
-# print(inversa("estoy probando"))
+# print(inversa("[1,3,4,56,6]"))
 
 
 # Escribir una función sum() y una función multip() que sumen y
@@ -65,8 +65,10 @@ def generar_n_caracteres(entero, caracter):
 
 # print(generar_n_caracteres(5, "x"))
 
-# Definir una función generar_n_caracteres() que tome un entero 
-#n y devuelva el caracter multiplicado por n.
+
+# Definir una función generar_n_caracteres() que tome un entero
+# n y devuelva el caracter multiplicado por n.
+
 # Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx"
 
 
@@ -97,3 +99,33 @@ def longitud(dato):
 # inversa de un numero
 def inversa2(cadena):
     index = -1
+
+##inversa de una cadena
+
+
+def string_inverse(lista):
+    inicio = 0
+    fin = len(lista) - 1
+    print(fin)
+    while inicio < fin:
+        lista[inicio], lista[fin] = lista[fin], lista[inicio]
+        inicio = inicio + 1
+        fin = fin - 1
+    return lista
+
+
+# print(string_inverse([1,2,43,9,73]))
+
+
+# conm bucle for
+
+
+def string_for(lista):
+    inicio = 0
+    fin = len(lista) - 1
+    for _ in range(len(lista) // 2):
+        lista[inicio], lista[fin] = lista[fin], lista[inicio]
+        inicio += 1
+        fin -= 1
+    return lista
+
