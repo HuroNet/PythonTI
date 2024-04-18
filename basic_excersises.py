@@ -65,25 +65,36 @@ def generar_n_caracteres(entero, caracter):
 
 # print(generar_n_caracteres(5, "x"))
 
-# Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. 
-# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx" 
+# Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n.
+# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx"
 
-def generar_caracteres(m,n):
-    for i in range(0,m+1):
+
+def generar_caracteres(m, n):
+    for i in range(0, m + 1):
         caracteres = i * n
-        print("los caracteres son:",caracteres)
+        print("los caracteres son:", caracteres)
     return caracteres
-print(generar_caracteres(5,'x'))
 
-#----------------------------------------
-#Definir una función que calcule la longitud de una lista o una cadena dada.\
+
+print(generar_caracteres(5, "x"))
+
+
+# ----------------------------------------
+# Definir una función que calcule la longitud de una lista o una cadena dada.\
 #  (Es cierto que python tiene la función len()  incorporada, pero escribirla
 #  por nosotros mismos resulta un muy buen ejercicio.
-def longitud( dato):
-    long=0
+def longitud(dato):
+    long = 0
     for i in dato:
-        long+=1
+        long += 1
     return long
+
 
 # print(longitud([1,2,3,5,4]))
 # print(longitud("Hola mundo "))
+
+
+# new excercise
+# inversa de un numero
+def inversa2(cadena):
+    index = -1
