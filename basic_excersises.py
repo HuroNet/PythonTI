@@ -95,8 +95,6 @@ def longitud(dato):
 # print(longitud("Hola mundo "))
 # new excercise
 # inversa de un numero
-def inversa2(cadena):
-    index = -1
 
 
 ##inversa de una cadena
