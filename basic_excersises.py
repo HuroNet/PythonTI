@@ -79,6 +79,20 @@ def generar_caracteres(m, n):
 
 # print(generar_caracteres(5, "x"))
 
+# Definir una función generar_n_caracteres() que tome un entero
+# n y devuelva el caracter multiplicado por n.
+# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx"
+
+
+def generar_caracteres(m, n):
+    for i in range(0, m + 1):
+        caracteres = i * n
+        print("los caracteres son:", caracteres)
+    return caracteres
+
+
+# print(generar_caracteres(5, "x"))
+
 
 # ----------------------------------------
 # Definir una función que calcule la longitud de una lista o una cadena dada.\
