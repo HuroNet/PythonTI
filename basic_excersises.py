@@ -95,9 +95,6 @@ def longitud(dato):
 # print(longitud("Hola mundo "))
 # new excercise
 # inversa de un numero
-
-
-#inversa de una cadena aqui el error 
 def string_inverse(lista):
     inicio = 0
     fin = len(lista) - 1
