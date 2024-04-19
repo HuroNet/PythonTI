@@ -95,13 +95,6 @@ def longitud(dato):
 # print(longitud("Hola mundo "))
 # new excercise
 # inversa de un numero
-def inversa2(cadena):
-    index = -1
-
-
-##inversa de una cadena
-
-
 def string_inverse(lista):
     inicio = 0
     fin = len(lista) - 1
@@ -116,7 +109,7 @@ def string_inverse(lista):
 # print(string_inverse([1,2,43,9,73]))
 
 
-# con el bucle for cambio
+# con el bucle for cambio new change
 
 
 def string_for(lista):
@@ -127,13 +120,3 @@ def string_for(lista):
         inicio += 1
         fin -= 1
     return lista
-
-
-def fun_sum(lista):
-    T_suma = 0
-    for i in lista:
-        T_suma = T_suma + i
-    return T_suma
-
-# print(fun_sum([1,3,5]))
-
