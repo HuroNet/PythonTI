@@ -118,3 +118,29 @@ def string_for(lista):
         inicio += 1
         fin -= 1
     return lista
+
+
+# -------------------------------------
+# convertir cadena de numeros a list
+def stringToList(cadena):
+    lista = []
+    numeros = cadena.split(",")
+    for numero in numeros:
+        numero_entero = int(numero)
+        lista.append(numero_entero)
+    return lista
+
+
+# print(stringToList("1,2,3,4,5"))
+
+# forma mas sencilla de hacer un cambio de
+# numero en cadena a lista
+
+
+def cadenaALista(cadena):
+    numeros = cadena.split(",")
+    lista = [int(numero) for numero in numeros]
+    return lista
+
+
+# print(cadenaALista("1,34,4,5,3,3"))
