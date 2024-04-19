@@ -116,7 +116,7 @@ def string_inverse(lista):
 # print(string_inverse([1,2,43,9,73]))
 
 
-# con el bucle for cambio
+# con el bucle for cambio new change
 
 
 def string_for(lista):
