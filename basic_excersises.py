@@ -79,20 +79,6 @@ def generar_caracteres(m, n):
 
 # print(generar_caracteres(5, "x"))
 
-# Definir una función generar_n_caracteres() que tome un entero
-# n y devuelva el caracter multiplicado por n.
-# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx"
-
-
-def generar_caracteres(m, n):
-    for i in range(0, m + 1):
-        caracteres = i * n
-        print("los caracteres son:", caracteres)
-    return caracteres
-
-
-# print(generar_caracteres(5, "x"))
-
 
 # ----------------------------------------
 # Definir una función que calcule la longitud de una lista o una cadena dada.\
@@ -111,6 +97,7 @@ def longitud(dato):
 # inversa de un numero
 def inversa2(cadena):
     index = -1
+<<<<<<< HEAD
 
 
 ##inversa de una cadena
@@ -141,13 +128,51 @@ def string_for(lista):
         inicio += 1
         fin -= 1
     return lista
+=======
+>>>>>>> main
 
 
-def fun_sum(lista):
-    T_suma = 0
-    for i in lista:
-        T_suma = T_suma + i
-    return T_suma
+##inversa de una cadena
 
 
+<<<<<<< HEAD
 # print(fun_sum([1,3,5]))
+=======
+def string_inverse(lista):
+    inicio = 0
+    fin = len(lista) - 1
+    print(fin)
+    while inicio < fin:
+        lista[inicio], lista[fin] = lista[fin], lista[inicio]
+        inicio = inicio + 1
+        fin = fin - 1
+    return lista
+
+
+# print(string_inverse([1,2,43,9,73]))
+
+
+# con el bucle for cambio
+
+
+def string_for(lista):
+    inicio = 0
+    fin = len(lista) - 1
+    for _ in range(len(lista) // 2):
+        lista[inicio], lista[fin] = lista[fin], lista[inicio]
+        inicio += 1
+        fin -= 1
+    return lista
+
+
+#Esto es una prueba 
+def inversaLista(lista):
+    inicio=0
+    fin = longitud(lista)-1
+    for valor in range(longitud(lista)//2):
+        lista[inicio]=lista[fin]
+        inicio +=1
+        fin -= 1
+    return lista
+print(inversaLista([1,2,3,4,5]))
+>>>>>>> main
