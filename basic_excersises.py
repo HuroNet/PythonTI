@@ -97,7 +97,6 @@ def longitud(dato):
 # inversa de un numero
 def inversa2(cadena):
     index = -1
-<<<<<<< HEAD
 
 
 ##inversa de una cadena
@@ -128,51 +127,3 @@ def string_for(lista):
         inicio += 1
         fin -= 1
     return lista
-=======
->>>>>>> main
-
-
-##inversa de una cadena
-
-
-<<<<<<< HEAD
-# print(fun_sum([1,3,5]))
-=======
-def string_inverse(lista):
-    inicio = 0
-    fin = len(lista) - 1
-    print(fin)
-    while inicio < fin:
-        lista[inicio], lista[fin] = lista[fin], lista[inicio]
-        inicio = inicio + 1
-        fin = fin - 1
-    return lista
-
-
-# print(string_inverse([1,2,43,9,73]))
-
-
-# con el bucle for cambio
-
-
-def string_for(lista):
-    inicio = 0
-    fin = len(lista) - 1
-    for _ in range(len(lista) // 2):
-        lista[inicio], lista[fin] = lista[fin], lista[inicio]
-        inicio += 1
-        fin -= 1
-    return lista
-
-
-#Esto es una prueba 
-def inversaLista(lista):
-    inicio=0
-    fin = longitud(lista)-1
-    for valor in range(longitud(lista)//2):
-        lista[inicio]=lista[fin]
-        inicio +=1
-        fin -= 1
-    return lista
-print(inversaLista([1,2,3,4,5]))
->>>>>>> main
