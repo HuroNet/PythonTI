@@ -97,7 +97,7 @@ def longitud(dato):
 # inversa de un numero
 
 
-##inversa de una cadena
+#inversa de una cadena
 
 
 def string_inverse(lista):
