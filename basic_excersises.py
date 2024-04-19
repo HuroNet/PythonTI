@@ -110,8 +110,6 @@ def string_inverse(lista):
 
 
 # con el bucle for cambio new change
-
-
 def string_for(lista):
     inicio = 0
     fin = len(lista) - 1
