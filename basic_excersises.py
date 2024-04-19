@@ -129,11 +129,13 @@ def string_for(lista):
     return lista
 
 
-def fun_sum(lista):
-    T_suma = 0
-    for i in lista:
-        T_suma = T_suma + i
-    return T_suma
-
-# print(fun_sum([1,3,5]))
-
+#Esto es una prueba 
+def inversaLista(lista):
+    inicio=0
+    fin = longitud(lista)-1
+    for valor in range(longitud(lista)//2):
+        lista[inicio]=lista[fin]
+        inicio +=1
+        fin -= 1
+    return lista
+print(inversaLista([1,2,3,4,5]))
