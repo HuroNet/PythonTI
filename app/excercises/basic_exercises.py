@@ -5,7 +5,6 @@
 
 # Escribir una función que tome un carácter y devuelva True si es una vocal,
 # de lo contrario devuelve False.
-from app.excercises.delete import delete
 
 
 def verificar_vocal(leter):
@@ -129,6 +128,7 @@ def stringToList(cadena):
     lista = []
     numeros = cadena.split(",")
     for numero in numeros:
+        print(numero)
         numero_entero = int(numero)
         lista.append(numero_entero)
     return lista
@@ -151,6 +151,12 @@ def cadena_a_lista(cadena):
 
 
 def superposition(lista1, lista2):
-    pass
+    for valor in lista1:
+        print(valor)
+        if valor in lista2:
+            return True
 
-delete()    
+    return False
+
+
+print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
