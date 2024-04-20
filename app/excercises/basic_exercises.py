@@ -7,6 +7,9 @@
 # de lo contrario devuelve False.
 
 
+from app.excercises.delete import delete
+
+
 def verificar_vocal(leter):
     vocales = ["a", "e", "i", "o", "u"]
     leter = leter.lower()
@@ -160,3 +163,5 @@ def superposition(lista1, lista2):
 
 
 print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
+
+delete.py
