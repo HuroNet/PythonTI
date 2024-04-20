@@ -137,7 +137,7 @@ def stringToList(cadena):
 # numero en cadena a lista
 #ejercico de entrevista
 
-def cadenaALista(cadena):
+def cadena_a_lista(cadena):
     numeros = cadena.split(",")
     lista = [int(numero) for numero in numeros]
     return lista
