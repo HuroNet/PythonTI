@@ -135,7 +135,8 @@ def stringToList(cadena):
 
 # forma mas sencilla de hacer un cambio de
 # numero en cadena a lista
-#ejercico de entrevista
+# ejercico de entrevista
+
 
 def cadena_a_lista(cadena):
     numeros = cadena.split(",")
