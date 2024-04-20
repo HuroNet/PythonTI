@@ -120,13 +120,28 @@ def string_for(lista):
     return lista
 
 
-#Esto es una prueba 
-def inversaLista(lista):
-    inicio=0
-    fin = longitud(lista)-1
-    for valor in range(longitud(lista)//2):
-        lista[inicio]=lista[fin]
-        inicio +=1
-        fin -= 1
+# -------------------------------------
+# convertir cadena de numeros a list
+def stringToList(cadena):
+    lista = []
+    numeros = cadena.split(",")
+    for numero in numeros:
+        numero_entero = int(numero)
+        lista.append(numero_entero)
     return lista
-print(inversaLista([1,2,3,4,5]))
+
+
+# print(stringToList("1,2,3,4,5"))
+
+# forma mas sencilla de hacer un cambio de
+# numero en cadena a lista
+# ejercico de entrevista
+
+
+def cadena_a_lista(cadena):
+    numeros = cadena.split(",")
+    lista = [int(numero) for numero in numeros]
+    return lista
+
+
+# print(cadenaALista("1,34,4,5,3,3"))
