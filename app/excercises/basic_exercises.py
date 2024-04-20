@@ -5,6 +5,9 @@
 
 # Escribir una función que tome un carácter y devuelva True si es una vocal,
 # de lo contrario devuelve False.
+from app.excercises.delete import delete
+
+
 def verificar_vocal(leter):
     vocales = ["a", "e", "i", "o", "u"]
     leter = leter.lower()
@@ -147,5 +150,7 @@ def cadena_a_lista(cadena):
 # print(cadenaALista("1,34,4,5,3,3"))
 
 
-def superposicion(lista1, lista2):
-    pass 
+def superposition(lista1, lista2):
+    pass
+
+delete()    
