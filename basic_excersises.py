@@ -145,3 +145,7 @@ def cadena_a_lista(cadena):
 
 
 # print(cadenaALista("1,34,4,5,3,3"))
+
+
+def superposicion(lista1, lista2):
+    pass 
