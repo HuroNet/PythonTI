@@ -3,14 +3,10 @@
 # email:carlos.paredes23@hotmail.com
 
 
-# Escribir una función que tome un carácter y devuelva True si es una vocal,
-# de lo contrario devuelve False.
-
-
 from app.excercises.delete import delete
 
 
-def verificar_vocal(leter):
+def verificar_si_es_vocal(leter):
     vocales = ["a", "e", "i", "o", "u"]
     leter = leter.lower()
     if leter in vocales:
@@ -19,12 +15,7 @@ def verificar_vocal(leter):
         return False
 
 
-# Definir una función inversa() que calcule la inversión de una cadena.
-# Por ejemplo la cadena "estoy probando" debería
-#  devolver la cadena "odnaborp yotse"
-
-
-def inversa(cadena):
+def inversa_de_una_cadena(cadena):
     # palabra=cadena[::-1] ##este es el primer metodo
     cadena_invertida = ""
     for caracter in cadena:
@@ -33,12 +24,6 @@ def inversa(cadena):
 
 
 # print(inversa("[1,3,4,56,6]"))
-
-
-# Escribir una función sum() y una función multip() que sumen y
-# multipliquen respectivamente todos los números de una lista.
-# Por ejemplo: sum([1,2,3,4]) debería devolver 10 y
-# multip([1,2,3,4]) debería devolver 24.
 
 
 def sum(a):
@@ -59,9 +44,6 @@ def multi(b):
 # print(multi([1,2,3,4]))
 
 
-# Definir una función generar_n_caracteres() que tome un entero
-#  n y devuelva el caracter multiplicado por n.
-# Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx"
 def generar_n_caracteres(entero, caracter):
     for i in range(1, entero + 1):
         caracteres = i * caracter
