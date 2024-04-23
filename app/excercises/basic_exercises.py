@@ -3,7 +3,7 @@
 # email:carlos.paredes23@hotmail.com
 
 
-from app.excercises.delete import delete
+# from app.excercises.delete import delete
 
 
 def verificar_si_es_vocal(leter):
@@ -144,6 +144,24 @@ def superposition(lista1, lista2):
     return False
 
 
-print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
+# print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
 
-delete.py
+# delete.py
+
+
+# Subcadena más larga sin caracteres repetidos
+def longest_substraing(cadena):
+    charset = set()  # actualizar la lista -- se crea un diccionario
+    longitud = 0  # calculo  de la longitud
+    left = 0
+    for right in range(0, len(cadena)):
+        while cadena[right] in charset:
+            charset.remove(cadena[left])
+            left += 1
+        charset.add(cadena[right])
+        longitud = max(longitud, right - left + 1)
+
+    return longitud
+
+
+print(longest_substraing("abcabca"))
