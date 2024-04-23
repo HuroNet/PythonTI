@@ -166,4 +166,17 @@ def longest_substraing(cadena):
     return longitud
 
 
-print(longest_substraing("abcabca"))
+# print(longest_substraing("abcdabca"))
+
+#another fuction 
+def cadena_larga(cadena):
+    longitud_cadena=0
+    lista_cadena=list(cadena)
+    new_list=[]
+    for valor in lista_cadena:
+        if valor not in new_list:
+            new_list.append(valor)
+            longitud_cadena+=1
+    return longitud_cadena
+
+# print(cadena_larga("abcdabcd"))
