@@ -4,6 +4,7 @@
 
 
 # from app.excercises.delete import delete
+# from app.excercises.delete import delete
 
 
 def verificar_si_es_vocal(leter):
@@ -144,6 +145,7 @@ def superposition(lista1, lista2):
     return False
 
 
+# print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
 # print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
 
 # delete.py
