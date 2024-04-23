@@ -3,7 +3,7 @@
 # email:carlos.paredes23@hotmail.com
 
 
-from app.excercises.delete import delete
+# from app.excercises.delete import delete
 
 
 def verificar_si_es_vocal(leter):
@@ -144,6 +144,20 @@ def superposition(lista1, lista2):
     return False
 
 
-print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
+# print(superposition([1, 2, 3, 4], [5, 6, 2, 4]))
 
-delete.py
+
+def twosum(matrix, target):
+    longitud = len(matrix)
+    index = 0
+    for i in range(index, longitud):
+        for j in range(index + 1, longitud):
+            if matrix[i] + matrix[j] == target:
+                return i, j
+    return False
+
+
+print(twosum([1, 2, 3, 4], 7))
+
+
+# delete.py
