@@ -68,10 +68,6 @@ def generar_caracteres(m, n):
 # print(generar_caracteres(5, "x"))
 
 
-# ----------------------------------------
-# Definir una función que calcule la longitud de una lista o una cadena dada.\
-#  (Es cierto que python tiene la función len()  incorporada, pero escribirla
-#  por nosotros mismos resulta un muy buen ejercicio.
 def longitud(dato):
     long = 0
     for i in dato:
