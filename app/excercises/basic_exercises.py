@@ -212,9 +212,11 @@ def repetitions(text):
 
 def mayores(text):
     repeticiones = repetitions(text)
-    max_repeticiones = max(repeticiones.values())
+    max_repeticiones = repeticiones.values()
 
     return max_repeticiones
 
 
-print(mayores(repetitions(modificar(minusculas(text)))))
+print(repetitions(modificar(minusculas(text))))
+print(mayores(modificar(minusculas(text))))
+print(modificar(minusculas(text)))
