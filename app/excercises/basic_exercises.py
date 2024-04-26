@@ -182,7 +182,7 @@ def cadena_larga(cadena):
 
 # problema de entrevista---
 # devolver cuantas evces se repite
-text = "Hola mi nombre es Carlos, entonces yo creo que carlos tiene un bonito nombre para decir hola."
+text = "Hola mi nombre es Carlos, entonces yo decir hola."
 
 
 def minusculas(text):
