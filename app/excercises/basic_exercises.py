@@ -68,10 +68,6 @@ def generar_caracteres(m, n):
 # print(generar_caracteres(5, "x"))
 
 
-# ----------------------------------------
-# Definir una función que calcule la longitud de una lista o una cadena dada.\
-#  (Es cierto que python tiene la función len()  incorporada, pero escribirla
-#  por nosotros mismos resulta un muy buen ejercicio.
 def longitud(dato):
     long = 0
     for i in dato:
@@ -182,3 +178,41 @@ def cadena_larga(cadena):
 
 
 # print(cadena_larga("abcdabcd"))
+
+
+# problema de entrevista---
+# devolver cuantas evces se repite
+text = "Hola mi nombre es Carlos, entonces yo decir hola."
+
+
+def minusculas(text):
+    text = text.lower()
+    return text
+
+
+def modificar(text):
+    text = text.replace(",", "").replace(".", "")
+    text = text.split()
+    return text
+
+
+def repetitions(text):
+    palabras = {}
+    for palabra in text:
+        if palabra in palabras:
+            palabras[palabra] += 1
+        else:
+            palabras[palabra] = 1
+    return palabras
+
+
+def mayores(text):
+    repeticiones = repetitions(text)
+    max_repeticiones = repeticiones.values()
+
+    return max_repeticiones
+
+
+print(repetitions(modificar(minusculas(text))))
+print(mayores(modificar(minusculas(text))))
+print(modificar(minusculas(text)))
