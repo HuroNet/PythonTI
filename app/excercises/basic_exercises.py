@@ -237,8 +237,7 @@ def cadnea_mas_larga(cadena):
     result=0
     newCadena=set()
     lista=list(cadena)
-    for dato in lista:
-        print(dato)
+
 
     return result
 print(cadnea_mas_larga("abcabcabcd"))
