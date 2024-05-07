@@ -231,3 +231,13 @@ def fizzbuzz(num):
 
 
 # print(fizzbuzz(15))
+##cadena mas larga
+
+def cadnea_mas_larga(cadena):
+    result=0
+    newCadena=set()
+    lista=list(cadena)
+
+
+    return result
+print(cadnea_mas_larga("abcabcabcd"))
