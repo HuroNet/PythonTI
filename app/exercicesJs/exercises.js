@@ -1,22 +1,37 @@
 // ejercicios
 
-// let curso ={
-//     titulo:"Curso profecional de JS",
-//     formato: " video",
-//     bloques:["Introduction","fuctions"],
-//     inscribir: fuction(){
+let curso = {
+  titulo: "Curso profecional de JS",
+  formato: " video",
+  bloques: ["Introduction", "fuctions"],
+  inscribir: function () {
+    console.log("inscritos");
+  },
+};
+// console.log(curso.titulo)
 
-//     }
-// }
+// shorthand syntax
 
-//FUncion
+let nombre = "carlos";
+let usuario = { nombre };
+console.log(usuario.nombre);
 
-function saludar(){
-    console.log("Hola mundo")
-}
+//convinaciones
+let user = {
+  edad: 20,
+  nombre: "adrian",
+};
 
-saludar();
+let esquema = { nivel: 2 };
+let admin = { ...user, ...esquema, permisos: true };
 
-// const func = fuction(){
+// console.log(admin);
+//operacion asincrona
 
-// };
+let request = require("request");
+
+request("http://www.google.com", function () {
+  console.log("termine");
+});
+
+//promesas
