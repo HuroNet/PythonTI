@@ -232,5 +232,3 @@ def fizzbuzz(num):
 
 print(fizzbuzz(15))
 ##cadena mas larga
-
-
