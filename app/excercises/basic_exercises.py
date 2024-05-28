@@ -182,7 +182,7 @@ def cadena_larga(cadena):
 
 # problema de entrevista---
 # devolver cuantas evces se repite
-text = "Hola mi nombre es Carlos, entonces yo decir hola. Y cuando digo Hola esta bien decir hola"
+text = "Hola mi nombre es Carlos, entonces yo decir Hola esta bien decir hola"
 
 
 def minusculas(text):
@@ -231,4 +231,3 @@ def fizzbuzz(num):
 
 
 print(fizzbuzz(15))
-##cadena mas larga
