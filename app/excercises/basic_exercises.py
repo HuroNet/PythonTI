@@ -184,6 +184,7 @@ def cadena_larga(cadena):
 # devolver cuantas evces se repite
 text = "Hola mi nombre es Carlos, entonces yo decir hola. Y cuando digo Hola esta bien decir hola"
 
+
 def minusculas(text):
     text = text.lower()
     return text
