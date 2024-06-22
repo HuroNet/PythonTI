@@ -9,7 +9,7 @@ let curso = {
   },
 };
 // console.log(curso.titulo)
-
+print(''hola mundo")
 // shorthand syntax
 
 let nombre = "carlos";
