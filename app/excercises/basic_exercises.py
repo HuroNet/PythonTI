@@ -233,14 +233,12 @@ def fizzbuzz(num):
 # print(fizzbuzz(15))
 
 
-
-
-
 def inversa_arrglo(arreglo):
-    inversa=[]
+    inversa = []
     for valor in arreglo:
         inversa = valor + inversa
-    
+
     return inversa
 
-print(inversa_arrglo([1,3,5,7,8,3]))
+
+print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
