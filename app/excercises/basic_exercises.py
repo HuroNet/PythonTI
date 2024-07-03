@@ -235,12 +235,11 @@ def fizzbuzz(num):
 
 def inversa_arrglo(arreglo):
     start = 0
-    fin = len(arreglo)
-    print(arreglo[start][fin])
+    fin = len(arreglo) - 1
     while start < fin:
-        print(arreglo[start][fin])
-
-
+        arreglo[start], arreglo[fin] = arreglo[fin], arreglo[start]
+        start += 1
+        fin -= 1
     return arreglo
 
 
