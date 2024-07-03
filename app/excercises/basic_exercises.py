@@ -235,8 +235,8 @@ def fizzbuzz(num):
 
 def inversa_arrglo(arreglo):
     inversa = []
-    for valor in arreglo:
-        inversa = valor + inversa
+    start = 0
+    fin = len(arreglo)
 
     return inversa
 
