@@ -245,13 +245,3 @@ def inversa_arrglo(arreglo):
 
 print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
 
-
-def list(cadena):
-    longitud_cadena = 0
-    lista_cadena = list(cadena)
-    new_list = []
-    for valor in lista_cadena:
-        if valor not in new_list:
-            new_list.append(valor)
-            longitud_cadena += 1
-    return longitud_cadena
