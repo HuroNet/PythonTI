@@ -236,10 +236,35 @@ def fizzbuzz(num):
 def inversa_arrglo(arreglo):
     start=0
     end=len(arreglo) -1
-    for i in arreglo:
-        arreglo[start]=arreglo[end]
-        print(i)
+    for i in range(len(arreglo)//2):
+        arreglo[start],arreglo[end]=arreglo[end],arreglo[start]
+        start +=1
+        end -=1
+        
     return arreglo
 
-print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
+# print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
 
+# convertir cadena de numeros a list
+
+def aLista(cadena):
+    lista=[]
+    numeros= cadena.split(",")
+    
+    for i in numeros:
+        enteros= int(i)
+        lista.append(enteros)
+    return lista
+
+print(aLista("1,2,3,9,5"))
+
+
+# Subcadena más larga sin caracteres repetidos
+def subcadena(cadena):
+    charset=set()
+    
+
+    return longitud
+
+
+# print(longest_substraing("abcdabca"))
