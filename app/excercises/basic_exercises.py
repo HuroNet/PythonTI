@@ -256,15 +256,21 @@ def aLista(cadena):
         lista.append(enteros)
     return lista
 
-print(aLista("1,2,3,9,5"))
+# print(aLista("1,2,3,9,5"))
 
 
 # Subcadena más larga sin caracteres repetidos
 def subcadena(cadena):
     charset=set()
-    
-
+    longitud=0
+    left=0
+    for right in range(0,len(cadena)):
+        while cadena[right] in charset:
+            charset.remove(cadena[left])
+            left += 1
+        charset.add(cadena[right])
+        longitud=max(longitud,right-left+1)     
     return longitud
 
 
-# print(longest_substraing("abcdabca"))
+print(subcadena("abcabca"))
