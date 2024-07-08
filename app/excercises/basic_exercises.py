@@ -355,7 +355,7 @@ def numeros_duplicados(lista):
 # Escribe un programa en Python que lea un archivo de texto
 # y cuente la frecuencia de cada palabra.
 
-texto = "hOLA como estas, te escribo esta carga la para carga de material y la TE"
+texto = "hOLA como estas esta carga la para carga de material y la TE"
 
 
 def frecuencia_palabra(texto):
