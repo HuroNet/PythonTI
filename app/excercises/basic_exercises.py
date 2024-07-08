@@ -234,42 +234,45 @@ def fizzbuzz(num):
 
 
 def inversa_arrglo(arreglo):
-    start=0
-    end=len(arreglo) -1
-    for i in range(len(arreglo)//2):
-        arreglo[start],arreglo[end]=arreglo[end],arreglo[start]
-        start +=1
-        end -=1
-        
+    start = 0
+    end = len(arreglo) - 1
+    for i in range(len(arreglo) // 2):
+        arreglo[start], arreglo[end] = arreglo[end], arreglo[start]
+        start += 1
+        end -= 1
+
     return arreglo
+
 
 # print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
 
 # convertir cadena de numeros a list
 
+
 def aLista(cadena):
-    lista=[]
-    numeros= cadena.split(",")
-    
+    lista = []
+    numeros = cadena.split(",")
+
     for i in numeros:
-        enteros= int(i)
+        enteros = int(i)
         lista.append(enteros)
     return lista
+
 
 # print(aLista("1,2,3,9,5"))
 
 
 # Subcadena más larga sin caracteres repetidos
 def subcadena(cadena):
-    charset=set()
-    longitud=0
-    left=0
-    for right in range(0,len(cadena)):
+    charset = set()
+    longitud = 0
+    left = 0
+    for right in range(0, len(cadena)):
         while cadena[right] in charset:
             charset.remove(cadena[left])
             left += 1
         charset.add(cadena[right])
-        longitud=max(longitud,right-left+1)     
+        longitud = max(longitud, right - left + 1)
     return longitud
 
 
@@ -278,51 +281,58 @@ def subcadena(cadena):
 
 # Escribe una función en Python que invierta una cadena dada.
 def cadena_dada(cadena):
-    cadena_invertida=""
+    cadena_invertida = ""
     for dato in cadena:
-        cadena_invertida= dato +  cadena_invertida
+        cadena_invertida = dato + cadena_invertida
 
     return cadena_invertida
 
+
 # print(cadena_dada("hola mundo"))
+
 
 # Escribe una función que cuente el número de palabras en una cadena.
 def contar_palabras(cadena):
-    count=0
-    cadena=cadena.split(" ")
+    count = 0
+    cadena = cadena.split(" ")
     for palabra in cadena:
         count += 1
     return count
+
 
 # print(contar_palabras("hola soy Carlos para ustedes"))
 
 # Escribe una función que reciba una lista de números y devuelva una
 # nueva lista con los números pares.
 
+
 def numeros_pares(lista):
-    pares=[]
-    suma=0
+    pares = []
+    suma = 0
     for numero in lista:
         if numero % 2 == 0:
             pares.append(numero)
         suma = numero + suma
     return pares, suma
 
+
 # print(numeros_pares([1,3,5,6,8,9,2]))
 
 # Escribe una función que reciba una lista de números y devuelva el
 # número máximo y el número mínimo de la lista.
 
+
 def num_max_min(lista):
-    maximo=lista[0]
-    minimo=lista[0]
+    maximo = lista[0]
+    minimo = lista[0]
     for numero in lista:
-        
+
         if numero > maximo:
             maximo = numero
         if numero < minimo:
             minimo = numero
 
-    return maximo,minimo
+    return maximo, minimo
 
-print(num_max_min([2,9,5,3,2,49]))
+
+print(num_max_min([2, 9, 5, 3, 2, 49]))
