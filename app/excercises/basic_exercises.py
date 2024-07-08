@@ -309,3 +309,20 @@ def numeros_pares(lista):
     return pares, suma
 
 # print(numeros_pares([1,3,5,6,8,9,2]))
+
+# Escribe una función que reciba una lista de números y devuelva el
+# número máximo y el número mínimo de la lista.
+
+def num_max_min(lista):
+    maximo=lista[0]
+    minimo=lista[0]
+    for numero in lista:
+        
+        if numero > maximo:
+            maximo = numero
+        if numero < minimo:
+            minimo = numero
+
+    return maximo,minimo
+
+print(num_max_min([2,9,5,3,2,49]))
