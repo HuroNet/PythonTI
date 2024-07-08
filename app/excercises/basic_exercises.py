@@ -273,4 +273,15 @@ def subcadena(cadena):
     return longitud
 
 
-print(subcadena("abcabca"))
+# print(subcadena("abcabca"))
+
+
+# Escribe una función en Python que invierta una cadena dada.
+def cadena_dada(cadena):
+    cadena_invertida=""
+    for dato in cadena:
+        cadena_invertida= dato +  cadena_invertida
+
+    return cadena_invertida
+
+print(cadena_dada("hola mundo"))
