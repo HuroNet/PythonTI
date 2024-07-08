@@ -296,4 +296,16 @@ def contar_palabras(cadena):
 
 # print(contar_palabras("hola soy Carlos para ustedes"))
 
+# Escribe una función que reciba una lista de números y devuelva una
+# nueva lista con los números pares.
 
+def numeros_pares(lista):
+    pares=[]
+    suma=0
+    for numero in lista:
+        if numero % 2 == 0:
+            pares.append(numero)
+        suma = numero + suma
+    return pares, suma
+
+# print(numeros_pares([1,3,5,6,8,9,2]))
