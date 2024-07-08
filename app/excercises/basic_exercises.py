@@ -284,4 +284,16 @@ def cadena_dada(cadena):
 
     return cadena_invertida
 
-print(cadena_dada("hola mundo"))
+# print(cadena_dada("hola mundo"))
+
+# Escribe una función que cuente el número de palabras en una cadena.
+def contar_palabras(cadena):
+    count=0
+    cadena=cadena.split(" ")
+    for palabra in cadena:
+        count += 1
+    return count
+
+# print(contar_palabras("hola soy Carlos para ustedes"))
+
+
