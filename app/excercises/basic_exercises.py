@@ -335,4 +335,39 @@ def num_max_min(lista):
     return maximo, minimo
 
 
-print(num_max_min([2, 9, 5, 3, 2, 49]))
+# print(num_max_min([2, 9, 5, 3, 2, 49]))
+
+# Escribe una función que reciba una lista de números y elimine los
+# duplicados, devolviendo una lista con elementos únicos.
+
+
+def numeros_duplicados(lista):
+    unicos = []
+    for numero in lista:
+        print(numero)
+        if numero not in unicos:
+            unicos.append(numero)
+    return unicos
+
+
+# print(numeros_duplicados([1, 3, 4, 4, 5, 7, 4]))
+
+# Escribe un programa en Python que lea un archivo de texto
+# y cuente la frecuencia de cada palabra.
+
+texto = "hOLA como estas esta carga la para carga de material y la TE"
+
+
+def frecuencia_palabra(texto):
+    frecuencia = {}
+    texto = texto.lower().split(" ")
+    for palabra in texto:
+        if palabra in frecuencia:
+            frecuencia[palabra] += 1
+        else:
+            frecuencia[palabra] = 1
+
+    return frecuencia
+
+
+print(frecuencia_palabra(texto))
