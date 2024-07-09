@@ -440,4 +440,16 @@ def FizzBuzz():
             print('buzz')
         else:
             print(i)
-print(FizzBuzz())
+# print(FizzBuzz())
+
+#Saludar con clase 
+
+class User():
+    def __init__(self, username:str, password:str) -> None:
+        self.username=username
+        self.passwprd=password
+    def saluda(self) -> str:
+        return f'Hola {self.username}'
+
+cody=User('Cody', 'axel29')
+print(cody.saluda()) 
