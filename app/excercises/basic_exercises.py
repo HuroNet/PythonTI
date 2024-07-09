@@ -370,4 +370,55 @@ def frecuencia_palabra(texto):
     return frecuencia
 
 
-print(frecuencia_palabra(texto))
+# print(frecuencia_palabra(texto))
+
+
+# Verificicar si es  palindromo
+
+
+def palindromo(palabra):
+    inversa = palabra[::-1]
+    for letra in range(len(palabra) // 2):
+        if palabra[letra] != palabra[len(palabra) - letra - 1]:
+            return False
+
+    return True, inversa
+
+
+# print(palindromo("reconocer"))
+
+
+# factorial un numero dado calcular de forma recursiva
+def factorial(numero):
+    facto = 1
+    for i in range(1, numero + 1):
+        facto = i * facto
+    return facto
+
+
+def factorial_recursivo(numero):
+    facto = 1
+    if numero == 0 or numero == 1:
+        facto = 1
+    else:
+        facto = numero * factorial_recursivo(numero - 1)
+    return facto
+
+
+# print(factorial_recursivo(5))
+# print(factorial(5))
+
+
+# transformar a Mayuscula la primera letra
+def mayuscula_primera(palabra):
+    capitalize = palabra.capitalize()
+    palabra = palabra[0][0].upper() + palabra[1:]
+    return palabra, capitalize
+
+
+print(mayuscula_primera("carlos"))
+
+# simular una cadena de obstacuklos
+# encontrar valor menor cercano
+# Escribir un programa en python que de solución al problema del FizzBuzz
+# 7. Escribe una función para filtrar números pares en una lista
