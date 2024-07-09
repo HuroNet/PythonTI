@@ -405,12 +405,19 @@ def factorial_recursivo(numero):
     return facto
 
 
-print(factorial_recursivo(5))
-print(factorial(5))
+# print(factorial_recursivo(5))
+# print(factorial(5))
 
-# comprobar si es un numero de amstrom
-# cuantos dias hay entre dos fechas dadas
+
 # transformar a Mayuscula la primera letra
+def mayuscula_primera(palabra):
+    capitalize = palabra.capitalize()
+    palabra = palabra[0][0].upper() + palabra[1:]
+    return palabra, capitalize
+
+
+print(mayuscula_primera("carlos"))
+
 # simular una cadena de obstacuklos
 # encontrar valor menor cercano
 # Escribir un programa en python que de solución al problema del FizzBuzz
