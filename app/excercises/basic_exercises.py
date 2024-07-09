@@ -418,7 +418,26 @@ def mayuscula_primera(palabra):
 
 # print(mayuscula_primera("carlos"))
 
-# simular una cadena de obstacuklos
 # encontrar valor menor cercano
+def valor_menor(lista):
+    valor=lista[0]
+    for i in lista:
+        if valor > i:
+            valor = i
+    return valor
+
+# print(valor_menor([34,54,32,18,45,32,43]))
+
 # Escribir un programa en python que de solución al problema del FizzBuzz
-# 7. Escribe una función para filtrar números pares en una lista
+
+def FizzBuzz():
+    for i in range(1,101):
+        if i%3==0 and i%5==0:
+            print('fizzbuzz')
+        if i%3==0:
+            print('fizz')
+        if i%5==0:
+            print('buzz')
+        else:
+            print(i)
+print(FizzBuzz())
