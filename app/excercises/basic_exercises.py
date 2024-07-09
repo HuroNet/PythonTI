@@ -385,7 +385,7 @@ def palindromo(palabra):
     return True, inversa
 
 
-# print(palindromo("reconocer"))
+print(palindromo("reconocer"))
 
 
 # factorial un numero dado calcular de forma recursiva
@@ -405,8 +405,8 @@ def factorial_recursivo(numero):
     return facto
 
 
-# print(factorial_recursivo(5))
-# print(factorial(5))
+print(factorial_recursivo(5))
+print(factorial(5))
 
 
 # transformar a Mayuscula la primera letra
