@@ -375,20 +375,39 @@ def frecuencia_palabra(texto):
 
 # Verificicar si es  palindromo
 
+
 def palindromo(palabra):
-    inversa=palabra[::-1]
-    for letra in range(len(palabra)//2):
-      if palabra[letra] != palabra[len(palabra)-letra-1]:
-          return False  
-    
-    return True,inversa
+    inversa = palabra[::-1]
+    for letra in range(len(palabra) // 2):
+        if palabra[letra] != palabra[len(palabra) - letra - 1]:
+            return False
 
-print(palindromo('reconocer'))
+    return True, inversa
 
 
+# print(palindromo("reconocer"))
 
 
 # factorial un numero dado calcular de forma recursiva
+def factorial(numero):
+    facto = 1
+    for i in range(1, numero + 1):
+        facto = i * facto
+    return facto
+
+
+def factorial_recursivo(numero):
+    facto = 1
+    if numero == 0 or numero == 1:
+        facto = 1
+    else:
+        facto = numero * factorial_recursivo(numero - 1)
+    return facto
+
+
+print(factorial_recursivo(5))
+print(factorial(5))
+
 # comprobar si es un numero de amstrom
 # cuantos dias hay entre dos fechas dadas
 # transformar a Mayuscula la primera letra
