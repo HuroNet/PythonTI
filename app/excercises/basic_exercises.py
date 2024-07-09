@@ -416,7 +416,7 @@ def mayuscula_primera(palabra):
     return palabra, capitalize
 
 
-print(mayuscula_primera("carlos"))
+# print(mayuscula_primera("carlos"))
 
 # simular una cadena de obstacuklos
 # encontrar valor menor cercano
