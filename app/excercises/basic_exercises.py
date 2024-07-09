@@ -370,4 +370,29 @@ def frecuencia_palabra(texto):
     return frecuencia
 
 
-print(frecuencia_palabra(texto))
+# print(frecuencia_palabra(texto))
+
+
+# Verificicar si es  palindromo
+
+def palindromo(palabra):
+    inversa=palabra[::-1]
+    for letra in range(len(palabra)//2):
+      if palabra[letra] != palabra[len(palabra)-letra-1]:
+          return False  
+    
+    return True,inversa
+
+print(palindromo('reconocer'))
+
+
+
+
+# factorial un numero dado calcular de forma recursiva
+# comprobar si es un numero de amstrom
+# cuantos dias hay entre dos fechas dadas
+# transformar a Mayuscula la primera letra
+# simular una cadena de obstacuklos
+# encontrar valor menor cercano
+# Escribir un programa en python que de solución al problema del FizzBuzz
+# 7. Escribe una función para filtrar números pares en una lista
