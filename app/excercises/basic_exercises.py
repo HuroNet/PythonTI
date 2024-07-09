@@ -385,7 +385,7 @@ def palindromo(palabra):
     return True, inversa
 
 
-print(palindromo("reconocer"))
+# print(palindromo("reconocer"))
 
 
 # factorial un numero dado calcular de forma recursiva
@@ -405,8 +405,8 @@ def factorial_recursivo(numero):
     return facto
 
 
-print(factorial_recursivo(5))
-print(factorial(5))
+# print(factorial_recursivo(5))
+# print(factorial(5))
 
 
 # transformar a Mayuscula la primera letra
@@ -416,7 +416,7 @@ def mayuscula_primera(palabra):
     return palabra, capitalize
 
 
-print(mayuscula_primera("carlos"))
+# print(mayuscula_primera("carlos"))
 
 # simular una cadena de obstacuklos
 # encontrar valor menor cercano
