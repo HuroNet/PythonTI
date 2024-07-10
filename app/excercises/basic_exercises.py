@@ -466,3 +466,14 @@ def anagrama(palabra1,palabra2):
     else:
         return False
 # print(anagrama('roma','amor'))
+
+# Escribe una función que genere los primeros n números 
+# de la secuencia de Fibonacci.
+
+def fibonacci(n):
+    fib=[0,1]
+    for i in range(2,n):
+        fib.append(fib[-1]+fib[-2])
+    return fib
+
+# print(fibonacci(10))
