@@ -418,26 +418,75 @@ def mayuscula_primera(palabra):
 
 # print(mayuscula_primera("carlos"))
 
+
 # encontrar valor menor cercano
 def valor_menor(lista):
-    valor=lista[0]
+    valor = lista[0]
     for i in lista:
         if valor > i:
             valor = i
     return valor
 
+
 # print(valor_menor([34,54,32,18,45,32,43]))
 
 # Escribir un programa en python que de solución al problema del FizzBuzz
 
+
 def FizzBuzz():
-    for i in range(1,101):
-        if i%3==0 and i%5==0:
-            print('fizzbuzz')
-        if i%3==0:
-            print('fizz')
-        if i%5==0:
-            print('buzz')
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
+            print("fizzbuzz")
+        if i % 3 == 0:
+            print("fizz")
+        if i % 5 == 0:
+            print("buzz")
         else:
             print(i)
-print(FizzBuzz())
+
+
+# print(FizzBuzz())
+
+# Saludar con clase
+
+
+class User:
+    def __init__(self, username: str, password: str) -> None:
+        self.username = username
+        self.passwprd = password
+
+    def saluda(self) -> str:
+        return f"Hola {self.username}"
+
+
+cody = User("Cody", "axel29")
+# print(cody.saluda())
+
+# Escribe una función que determine si dos cadenas de texto
+# son anagramas (tienen las mismas letras en diferente orden).
+
+
+def anagrama(palabra1, palabra2):
+    palabra1 = sorted(palabra1.lower())
+    palabra2 = sorted(palabra2.lower())
+
+    if palabra2 == palabra1:
+        return "son anagrmas"
+    else:
+        return False
+
+
+# print(anagrama('roma','amor'))
+
+# Escribe una función que genere los primeros n números
+# de la secuencia de Fibonacci.
+
+
+def fibonacci(n):
+    fib = [0, 1]
+    for i in range(2, n):
+        fib.append(fib[-1] + fib[-2])
+    return fib
+
+
+# print(fibonacci(10))
