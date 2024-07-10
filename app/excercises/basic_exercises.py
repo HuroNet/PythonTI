@@ -489,4 +489,20 @@ def fibonacci(n):
     return fib
 
 
-# print(fibonacci(10))
+# # print(fibonacci(10))
+# Escribe una función que tome una oración y devuelva
+# la misma oración con las palabras en orden inverso.
+def invertir_oracion(oracion):
+    oracion1 = oracion[::-1]
+    oracion2 = ""
+    print(oracion1)
+    for letra in oracion:
+        oracion2 = letra + oracion2
+
+    return oracion2
+
+
+# print(invertir_oracion('Mi nombre es carlos paredes'))
+
+# Escribe una función que tome una lista de números y
+# la ordene de menor a mayor sin usar la función sorted() de Python.
