@@ -452,4 +452,17 @@ class User():
         return f'Hola {self.username}'
 
 cody=User('Cody', 'axel29')
-print(cody.saluda()) 
+# print(cody.saluda()) 
+
+# Escribe una función que determine si dos cadenas de texto
+# son anagramas (tienen las mismas letras en diferente orden).
+
+def anagrama(palabra1,palabra2):
+    palabra1=sorted(palabra1.lower())
+    palabra2=sorted(palabra2.lower())
+
+    if palabra2 == palabra1:
+        return 'son anagrmas'
+    else:
+        return False
+# print(anagrama('roma','amor'))
