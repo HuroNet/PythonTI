@@ -486,10 +486,12 @@ def fibonacci(n):
     fib = [0, 1]
     for i in range(2, n):
         fib.append(fib[-1] + fib[-2])
+        print(fib[-1] + fib[-2])
+        
     return fib
 
 
-# # print(fibonacci(10))
+# print(fibonacci(5))
 # Escribe una función que tome una oración y devuelva
 # la misma oración con las palabras en orden inverso.
 def invertir_oracion(oracion):
@@ -506,3 +508,14 @@ def invertir_oracion(oracion):
 
 # Escribe una función que tome una lista de números y
 # la ordene de menor a mayor sin usar la función sorted() de Python.
+def ordenar_lista(lista):
+    n=len(lista)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if lista[j] > lista[j+1]:
+                temp=lista[j]
+                lista[j]=lista[j+1]
+                lista[j+1]=temp
+    return lista
+
+print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
