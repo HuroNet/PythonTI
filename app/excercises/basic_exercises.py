@@ -487,7 +487,7 @@ def fibonacci(n):
     for i in range(2, n):
         fib.append(fib[-1] + fib[-2])
         print(fib[-1] + fib[-2])
-        
+
     return fib
 
 
@@ -506,16 +506,33 @@ def invertir_oracion(oracion):
 
 # print(invertir_oracion('Mi nombre es carlos paredes'))
 
+
 # Escribe una función que tome una lista de números y
 # la ordene de menor a mayor sin usar la función sorted() de Python.
 def ordenar_lista(lista):
-    n=len(lista)
+    n = len(lista)
     for i in range(n):
-        for j in range(0, n-i-1):
-            if lista[j] > lista[j+1]:
-                temp=lista[j]
-                lista[j]=lista[j+1]
-                lista[j+1]=temp
+        for j in range(0, n - i - 1):
+            if lista[j] > lista[j + 1]:
+                temp = lista[j]
+                lista[j] = lista[j + 1]
+                lista[j + 1] = temp
     return lista
 
-print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
+
+# # print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
+# Escribe una función que cuente el número de veces
+# que cada palabra aparece en un texto.
+texto="hOLA como estas esta carga la, para carga de material y la TE"
+def contar_palabra_text(texto):
+    palabra={}    
+    palabras=texto.split()
+    for palabra in palabras:
+        if palabra in palabras:
+            palabras[palabra] += 1
+        else:
+            palabras[palabra] = 1
+ 
+    return palabras
+
+print(contar_palabra_text(texto))
