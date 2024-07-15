@@ -525,9 +525,9 @@ def ordenar_lista(lista):
 # que cada palabra aparece en un texto.
 texto="hOLA como estas esta carga la, para carga de material y la TE"
 def contar_palabra_text(texto):
-    palabra={}    
-    palabras=texto.split()
-    for palabra in palabras:
+    palabras={}    
+    texto=texto.split()
+    for palabra in texto:
         if palabra in palabras:
             palabras[palabra] += 1
         else:
