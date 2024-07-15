@@ -557,10 +557,27 @@ def return_pares(lista):
 # Escribe una función que tome una lista de números
 # y devuelva el valor máximo.
 
+
 def valor_maximo(lista):
-    maximo=lista[0]
+    maximo = lista[0]
     for valor in lista:
         if valor > maximo:
             maximo = valor
     return maximo
-print(valor_maximo([1,45,93,4]))
+
+
+# print(valor_maximo([1, 45, 93, 4]))
+
+# Escribe una función que implemente la búsqueda binaria para
+# encontrar la posición de un número en una lista ordenada.
+
+def busqueda_binaria(target,lista):
+    positions=[]
+    for valor in lista:
+        if valor == target:
+            positions = lista[valor]
+
+
+    return positions
+
+# print(busqueda_binaria(3,[8,5,3,2,45,6,7]))
