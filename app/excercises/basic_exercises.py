@@ -523,16 +523,19 @@ def ordenar_lista(lista):
 # # print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
 # Escribe una función que cuente el número de veces
 # que cada palabra aparece en un texto.
-texto="hOLA como estas esta carga la, para carga de material y la TE"
+texto = "hOLA como estas esta carga la, para carga de material y la TE"
+
+
 def contar_palabra_text(texto):
-    palabras={}    
-    texto=texto.split()
+    palabras = {}
+    texto = texto.split()
     for palabra in texto:
         if palabra in palabras:
             palabras[palabra] += 1
         else:
             palabras[palabra] = 1
- 
+
     return palabras
+
 
 print(contar_palabra_text(texto))
