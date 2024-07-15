@@ -580,4 +580,17 @@ def busqueda_binaria(target,lista):
 
     return positions
 
-# print(busqueda_binaria(3,[8,5,3,2,45,6,7]))
+# # print(busqueda_binaria(3,[8,5,3,2,45,6,7]))
+# Escribe una función que elimine los elementos duplicados
+# de una lista y devuelva una lista con los elementos únicos.
+
+def eliminar_duplicados(lista):
+    vistos=set()            
+    lista_unica=[]
+    for elemento in lista:
+        if elemento not in vistos:
+            lista_unica.append(elemento)
+            vistos.add(elemento)
+
+    return lista_unica
+print(eliminar_duplicados([3,5,7,8,3,7,6,8]))
