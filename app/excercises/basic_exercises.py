@@ -538,4 +538,16 @@ def contar_palabra_text(texto):
     return palabras
 
 
-print(contar_palabra_text(texto))
+# print(contar_palabra_text(texto))
+
+# Escribe una función que tome una lista de números 
+# y devuelva la suma de todos los números pares en la lista.
+
+def return_pares(lista):
+    pares=[]
+    for valor in lista:
+        if valor % 2 == 0:
+            pares.append(valor)
+    return pares
+
+# print(return_pares([1,2,3,4,5,6,7,8,9,0]))
