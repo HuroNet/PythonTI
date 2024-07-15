@@ -523,16 +523,74 @@ def ordenar_lista(lista):
 # # print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
 # Escribe una función que cuente el número de veces
 # que cada palabra aparece en un texto.
-texto="hOLA como estas esta carga la, para carga de material y la TE"
+texto = "hOLA como estas esta carga la, para carga de material y la TE"
+
+
 def contar_palabra_text(texto):
-    palabras={}    
-    texto=texto.split()
+    palabras = {}
+    texto = texto.split()
     for palabra in texto:
         if palabra in palabras:
             palabras[palabra] += 1
         else:
             palabras[palabra] = 1
- 
+
     return palabras
 
-print(contar_palabra_text(texto))
+
+# print(contar_palabra_text(texto))
+
+# Escribe una función que tome una lista de números
+# y devuelva la suma de todos los números pares en la lista.
+
+
+def return_pares(lista):
+    pares = []
+    for valor in lista:
+        if valor % 2 == 0:
+            pares.append(valor)
+    return pares
+
+
+# print(return_pares([1,2,3,4,5,6,7,8,9,0]))
+
+# Escribe una función que tome una lista de números
+# y devuelva el valor máximo.
+
+
+def valor_maximo(lista):
+    maximo = lista[0]
+    for valor in lista:
+        if valor > maximo:
+            maximo = valor
+    return maximo
+
+
+# print(valor_maximo([1, 45, 93, 4]))
+
+# Escribe una función que implemente la búsqueda binaria para
+# encontrar la posición de un número en una lista ordenada.
+
+def busqueda_binaria(target,lista):
+    positions=[]
+    for valor in lista:
+        if valor == target:
+            positions = lista[valor]
+
+
+    return positions
+
+# # print(busqueda_binaria(3,[8,5,3,2,45,6,7]))
+# Escribe una función que elimine los elementos duplicados
+# de una lista y devuelva una lista con los elementos únicos.
+
+def eliminar_duplicados(lista):
+    vistos=set()            
+    lista_unica=[]
+    for elemento in lista:
+        if elemento not in vistos:
+            lista_unica.append(elemento)
+            vistos.add(elemento)
+
+    return lista_unica
+print(eliminar_duplicados([3,5,7,8,3,7,6,8]))
