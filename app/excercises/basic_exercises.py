@@ -540,14 +540,27 @@ def contar_palabra_text(texto):
 
 # print(contar_palabra_text(texto))
 
-# Escribe una función que tome una lista de números 
+# Escribe una función que tome una lista de números
 # y devuelva la suma de todos los números pares en la lista.
 
+
 def return_pares(lista):
-    pares=[]
+    pares = []
     for valor in lista:
         if valor % 2 == 0:
             pares.append(valor)
     return pares
 
+
 # print(return_pares([1,2,3,4,5,6,7,8,9,0]))
+
+# Escribe una función que tome una lista de números
+# y devuelva el valor máximo.
+
+def valor_maximo(lista):
+    maximo=lista[0]
+    for valor in lista:
+        if valor > maximo:
+            maximo = valor
+    return maximo
+print(valor_maximo([1,45,93,4]))
