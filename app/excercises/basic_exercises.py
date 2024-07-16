@@ -571,28 +571,32 @@ def valor_maximo(lista):
 # Escribe una función que implemente la búsqueda binaria para
 # encontrar la posición de un número en una lista ordenada.
 
-def busqueda_binaria(target,lista):
-    positions=[]
+
+def busqueda_binaria(target, lista):
+    positions = []
     for valor in lista:
         if valor == target:
             positions = lista[valor]
 
-
     return positions
+
 
 # # print(busqueda_binaria(3,[8,5,3,2,45,6,7]))
 # Escribe una función que elimine los elementos duplicados
 # de una lista y devuelva una lista con los elementos únicos.
 
+
 def eliminar_duplicados(lista):
-    vistos=set()            
-    lista_unica=[]
+    vistos = set()
+    lista_unica = []
     for elemento in lista:
         if elemento not in vistos:
             lista_unica.append(elemento)
             vistos.add(elemento)
 
     return lista_unica
+
+
 # print(eliminar_duplicados([3,5,7,8,3,7,6,8]))
 
 # Comprimir Cadena
@@ -601,27 +605,19 @@ def eliminar_duplicados(lista):
 # el conteo de caracteres repetidos. Por ejemplo, la cadena
 # "aabcccccaaa" debería convertirse en "a2b1c5a3".
 
+
 def comprimir_cadena(cadena):
- # Inicializar variables
     comprimida = []
     conteo = 1
 
-    # Iterar sobre la cadena
     for i in range(1, len(cadena)):
         if cadena[i] == cadena[i - 1]:
-            # Incrementar el conteo si el carácter es igual al anterior
             conteo += 1
         else:
-            # Añadir el carácter y su conteo a la lista comprimida
             comprimida.append(cadena[i - 1] + str(conteo))
-            # Reiniciar el conteo
             conteo = 1
-
-    # Añadir el último carácter y su conteo
     comprimida.append(cadena[-1] + str(conteo))
+    return "".join(comprimida)
 
-    # Convertir la lista a una cadena y devolverla
-    return ''.join(comprimida)
-        
 
-print(comprimir_cadena('aabcccccaaa'))
+print(comprimir_cadena("aabcccccaaa"))
