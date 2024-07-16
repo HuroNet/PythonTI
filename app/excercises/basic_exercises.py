@@ -593,4 +593,35 @@ def eliminar_duplicados(lista):
             vistos.add(elemento)
 
     return lista_unica
-print(eliminar_duplicados([3,5,7,8,3,7,6,8]))
+# print(eliminar_duplicados([3,5,7,8,3,7,6,8]))
+
+# Comprimir Cadena
+
+# Escribe una función que comprima una cadena de texto usando
+# el conteo de caracteres repetidos. Por ejemplo, la cadena
+# "aabcccccaaa" debería convertirse en "a2b1c5a3".
+
+def comprimir_cadena(cadena):
+ # Inicializar variables
+    comprimida = []
+    conteo = 1
+
+    # Iterar sobre la cadena
+    for i in range(1, len(cadena)):
+        if cadena[i] == cadena[i - 1]:
+            # Incrementar el conteo si el carácter es igual al anterior
+            conteo += 1
+        else:
+            # Añadir el carácter y su conteo a la lista comprimida
+            comprimida.append(cadena[i - 1] + str(conteo))
+            # Reiniciar el conteo
+            conteo = 1
+
+    # Añadir el último carácter y su conteo
+    comprimida.append(cadena[-1] + str(conteo))
+
+    # Convertir la lista a una cadena y devolverla
+    return ''.join(comprimida)
+        
+
+print(comprimir_cadena('aabcccccaaa'))
