@@ -620,4 +620,12 @@ def comprimir_cadena(cadena):
     return "".join(comprimida)
 
 
-print(comprimir_cadena("aabcccccaaa"))
+# # print(comprimir_cadena("aabcccccaaa"))
+# Factorial
+
+# Escribe una función que calcule el factorial de un número entero no negativo.
+
+def factorial(numero):
+    fact=1
+
+    return fact
