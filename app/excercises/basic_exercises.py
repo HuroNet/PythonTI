@@ -635,4 +635,17 @@ def factorial(numero):
     return fact
 
 
-print(factorial(89))
+# print(factorial(89))
+
+
+import math
+
+def mcm(a, b):
+    return abs(a * b) // math.gcd(a, b)
+
+# Ejemplo de uso
+num1 = 12
+num2 = 18
+
+resultado = mcm(num1, num2)
+print(f"El MCM de {num1} y {num2} es {resultado}")
