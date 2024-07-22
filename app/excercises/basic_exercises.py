@@ -637,15 +637,7 @@ def factorial(numero):
 
 # print(factorial(89))
 
-
-import math
-
-def mcm(a, b):
-    return abs(a * b) // math.gcd(a, b)
-
-# Ejemplo de uso
-num1 = 12
-num2 = 18
-
-resultado = mcm(num1, num2)
-print(f"El MCM de {num1} y {num2} es {resultado}")
+# hacer el minimo comun multipli de un numero 
+def MCM(numero):
+    return 0 
+print(MCM(30))
