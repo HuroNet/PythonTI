@@ -638,6 +638,44 @@ def factorial(numero):
 # print(factorial(89))
 
 # hacer el minimo comun multipli de un numero 
-def MCM(numero):
-    return 0 
-print(MCM(30))
+def prime_factors(n):
+    i = 2
+    factors = {}
+    while i * i <= n:
+        while (n % i) == 0:
+            if i in factors:
+                factors[i] += 1
+            else:
+                factors[i] = 1
+            n //= i
+        i += 1
+    if n > 1:
+        factors[n] = 1
+    return factors
+
+def merge_factors(factors1, factors2):
+    merged_factors = factors1.copy()
+    for factor, count in factors2.items():
+        if factor in merged_factors:
+            merged_factors[factor] = max(merged_factors[factor], count)
+        else:
+            merged_factors[factor] = count
+    return merged_factors
+
+def calculate_mcm_from_factors(factors):
+    mcm = 1
+    for factor, count in factors.items():
+        mcm *= factor ** count
+    return mcm
+
+# Calcula el MCM de dos números
+a = 12
+b = 18
+
+factors_a = prime_factors(a)
+factors_b = prime_factors(b)
+
+merged_factors = merge_factors(factors_a, factors_b)
+mcm = calculate_mcm_from_factors(merged_factors)
+
+# print(f"El MCM de {a} y {b} es {mcm}")
