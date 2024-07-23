@@ -678,4 +678,21 @@ factors_b = prime_factors(b)
 merged_factors = merge_factors(factors_a, factors_b)
 mcm = calculate_mcm_from_factors(merged_factors)
 
-# print(f"El MCM de {a} y {b} es {mcm}")
+# print(f"El MCM de {a} y {b} es {mcm}")\
+
+# Intersección de Listas
+
+# Escribe una función que tome dos listas y devuelva una nueva 
+# lista con los elementos que están en ambas listas.
+
+def interseccion_listas(lista1, lista2):
+    set1 = set(lista1)
+    set2 = set(lista2)
+    interseccion = set1.intersection(set2)
+    return list(interseccion)
+
+# Ejemplo de uso
+lista1 = [1, 2, 2, 3, 4]
+lista2 = [3, 4, 4, 5, 6]
+
+print(interseccion_listas(lista1, lista2))  # Salida: [3, 4]
