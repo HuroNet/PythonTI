@@ -695,4 +695,24 @@ def interseccion_listas(lista1, lista2):
 lista1 = [1, 2, 2, 3, 4]
 lista2 = [3, 4, 4, 5, 6]
 
-print(interseccion_listas(lista1, lista2))  # Salida: [3, 4]
+# print(interseccion_listas(lista1, lista2))  # Salida: [3, 4]
+
+
+# Número Perfecto
+
+# Escribe una función que determine si un
+# número es un número perfecto (la suma de sus divisores propios es igual al número).
+
+def es_numero_perfecto(n):
+    if n <= 0:
+        return False  # Los números perfectos son positivos
+
+    suma_divisores = 0
+    for i in range(1, n // 2 + 1):
+        if n % i == 0:
+            suma_divisores += i
+
+    return suma_divisores == n
+
+# Ejemplos de uso
+print(es_numero_perfecto(6))   # True
