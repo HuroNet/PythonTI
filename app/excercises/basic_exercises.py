@@ -705,7 +705,7 @@ lista2 = [3, 4, 4, 5, 6]
 
 def es_numero_perfecto(n):
     if n <= 0:
-        return False  # Los números perfectos son positivos
+        return False  
 
     suma_divisores = 0
     for i in range(1, n // 2 + 1):
@@ -714,7 +714,5 @@ def es_numero_perfecto(n):
 
     return suma_divisores == n
 
-# Ejemplos de uso
-print(es_numero_perfecto(6))   # True
-
-print(es_numero_perfecto(12))  # False
+# print(es_numero_perfecto(6))   # True
+# print(es_numero_perfecto(12))  # False
