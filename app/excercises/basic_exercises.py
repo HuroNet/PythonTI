@@ -714,5 +714,5 @@ def es_numero_perfecto(n):
 
     return suma_divisores == n
 
-# print(es_numero_perfecto(6))   # True
-# print(es_numero_perfecto(12))  # False
+print(es_numero_perfecto(6))   # True
+print(es_numero_perfecto(12))  # False
