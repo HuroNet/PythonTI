@@ -716,3 +716,5 @@ def es_numero_perfecto(n):
 
 # Ejemplos de uso
 print(es_numero_perfecto(6))   # True
+
+print(es_numero_perfecto(12))  # False
