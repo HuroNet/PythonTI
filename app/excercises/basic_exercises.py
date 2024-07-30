@@ -751,7 +751,8 @@ n = 10
 # Generar un Triángulo de Pascal
 
 
-# Escribe una función que genere un triángulo de Pascal de altura n.
+# Escribe una función que genere un triángulo
+# de Pascal de altura n.
 def generar_triangulo_de_pascual(n):
     triangulo = []
 
