@@ -637,7 +637,8 @@ def factorial(numero):
 
 # print(factorial(89))
 
-# hacer el minimo comun multipli de un numero 
+
+# hacer el minimo comun multipli de un numero
 def prime_factors(n):
     i = 2
     factors = {}
@@ -653,6 +654,7 @@ def prime_factors(n):
         factors[n] = 1
     return factors
 
+
 def merge_factors(factors1, factors2):
     merged_factors = factors1.copy()
     for factor, count in factors2.items():
@@ -662,11 +664,13 @@ def merge_factors(factors1, factors2):
             merged_factors[factor] = count
     return merged_factors
 
+
 def calculate_mcm_from_factors(factors):
     mcm = 1
     for factor, count in factors.items():
-        mcm *= factor ** count
+        mcm *= factor**count
     return mcm
+
 
 # Calcula el MCM de dos números
 a = 12
@@ -682,14 +686,16 @@ mcm = calculate_mcm_from_factors(merged_factors)
 
 # Intersección de Listas
 
-# Escribe una función que tome dos listas y devuelva una nueva 
+# Escribe una función que tome dos listas y devuelva una nueva
 # lista con los elementos que están en ambas listas.
+
 
 def interseccion_listas(lista1, lista2):
     set1 = set(lista1)
     set2 = set(lista2)
     interseccion = set1.intersection(set2)
     return list(interseccion)
+
 
 # Ejemplo de uso
 lista1 = [1, 2, 2, 3, 4]
@@ -703,9 +709,10 @@ lista2 = [3, 4, 4, 5, 6]
 # Escribe una función que determine si un
 # número es un número perfecto (la suma de sus divisores propios es igual al número).
 
+
 def es_numero_perfecto(n):
     if n <= 0:
-        return False  
+        return False
 
     suma_divisores = 0
     for i in range(1, n // 2 + 1):
@@ -714,10 +721,12 @@ def es_numero_perfecto(n):
 
     return suma_divisores == n
 
+
 # print(es_numero_perfecto(6))   # True
 # print(es_numero_perfecto(12))  # False
 
 #  Generar una Secuencia de Números Fibonacci
+
 
 # Escribe una función que genere una secuencia de
 # números Fibonacci de longitud n.
@@ -735,6 +744,29 @@ def fibonacci_sequence(n):
         sequence.append(next_number)
     return sequence
 
+
 # Ejemplo de uso
 n = 10
-print(fibonacci_sequence(n))
+# # print(fibonacci_sequence(n))
+# Generar un Triángulo de Pascal
+
+
+# Escribe una función que genere un triángulo de Pascal de altura n.
+def generar_triangulo_de_pascual(n):
+    triangulo = []
+
+    for i in range(n):
+        fila = [1] * (i + 1)
+        for j in range(1, i):
+            fila[j] = triangulo[i - 1][j - 1] + triangulo[i - 1][j]
+        triangulo.append(fila)
+
+    return triangulo
+
+
+# Ejemplo de uso:
+altura = 5
+triangulo_de_pascual = generar_triangulo_de_pascual(altura)
+
+for fila in triangulo_de_pascual:
+    print(fila)
