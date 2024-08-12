@@ -90,7 +90,7 @@ def string_inverse(lista):
     return lista
 
 
-# print(string_inverse([1,2,43,9,73]))
+print(string_inverse([1,2,43,9,73]))
 
 
 # con el bucle for cambio new change
