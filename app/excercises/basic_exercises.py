@@ -356,7 +356,6 @@ def numeros_duplicados(lista):
 # y cuente la frecuencia de cada palabra.
 
 
-
 def frecuencia_palabra(texto):
     frecuencia = {}
     texto = texto.lower().split(" ")
