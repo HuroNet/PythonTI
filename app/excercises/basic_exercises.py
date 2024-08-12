@@ -697,7 +697,7 @@ lista2 = [3, 4, 4, 5, 6]
 # Número Perfecto
 
 # Escribe una función que determine si un
-# número es un número perfecto (la suma de sus divisores propios es igual al número).
+# número es un número perfecto (la suma de sus divi
 
 
 def es_numero_perfecto(n):
