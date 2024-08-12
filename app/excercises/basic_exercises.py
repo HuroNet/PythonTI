@@ -498,7 +498,7 @@ def invertir_oracion(oracion):
 
 
 # Escribe una función que tome una lista de números y
-# la ordene de menor a mayor sin usar la función 
+# la ordene de menor a mayor sin usar la función
 def ordenar_lista(lista):
     n = len(lista)
     for i in range(n):
