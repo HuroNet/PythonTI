@@ -1,3 +1,5 @@
+import numpy as np
+
 #1. Two Sum
 def two_sum(nums,target):
     for i in range(len(nums) - 1):
