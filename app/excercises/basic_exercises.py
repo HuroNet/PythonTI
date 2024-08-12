@@ -182,7 +182,7 @@ def cadena_larga(cadena):
 
 # problema de entrevista---
 # devolver cuantas evces se repite
-text = "Hola mi nombre es Carlos, entonces yo decir Hola esta bien decir hola"
+text = "Hola mi nombre es s, entonces "
 
 
 def minusculas(text):
@@ -355,7 +355,6 @@ def numeros_duplicados(lista):
 # Escribe un programa en Python que lea un archivo de texto
 # y cuente la frecuencia de cada palabra.
 
-texto = "hOLA como estas esta carga la para carga de material y la TE"
 
 
 def frecuencia_palabra(texto):
