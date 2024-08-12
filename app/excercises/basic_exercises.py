@@ -386,14 +386,6 @@ def palindromo(palabra):
 # print(palindromo("reconocer"))
 
 
-# factorial un numero dado calcular de forma recursiva
-def factorial(numero):
-    facto = 1
-    for i in range(1, numero + 1):
-        facto = i * facto
-    return facto
-
-
 def factorial_recursivo(numero):
     facto = 1
     if numero == 0 or numero == 1:
@@ -506,7 +498,7 @@ def invertir_oracion(oracion):
 
 
 # Escribe una función que tome una lista de números y
-# la ordene de menor a mayor sin usar la función sorted() de Python.
+# la ordene de menor a mayor sin usar la función 
 def ordenar_lista(lista):
     n = len(lista)
     for i in range(n):
@@ -521,7 +513,7 @@ def ordenar_lista(lista):
 # # print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
 # Escribe una función que cuente el número de veces
 # que cada palabra aparece en un texto.
-texto = "hOLA como estas esta carga la, para carga de material y la TE"
+texto = "hOLA como estas esta carga "
 
 
 def contar_palabra_text(texto):
