@@ -6,3 +6,10 @@ def invertir_cadena(cadena):
     return cadena_inve
 
 # print(invertir_cadena('Hola mi nombre es Carlos'))
+
+def suma_numeros(numeros):
+    total=0
+    for numero in numeros:
+       total += numero 
+    return total 
+print(suma_numeros([1,23,4,5]))
