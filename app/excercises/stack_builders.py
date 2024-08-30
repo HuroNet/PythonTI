@@ -30,7 +30,30 @@ def suma_numeros(numeros):
 
 def numeros_unicos(lista):
     numeros = {}
+    for valor in lista:
+        if valor in numeros:
+            numeros[valor] += 1
+        else:
+            numeros[valor] = 1
 
+    unicos = [valor for valor, cantidad in numeros.items() if cantidad == 1]
+
+    return unicos
+
+# def numeros_unicos(lista):
+#     numeros = {}
+#     for valor in lista:
+#         if valor in numeros:
+#             numeros[valor] += 1
+#         else:
+#             numeros[valor] = 1
+
+#     unicos = []
+#     for valor, cantidad in numeros.items():
+#         if cantidad == 1:
+#             unicos.append(valor)
+
+#     return unicos
 
 # print(numeros_unicos([1, 2, 3, 3, 4, 1, 5]))
 
