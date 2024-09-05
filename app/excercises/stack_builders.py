@@ -55,7 +55,7 @@ def numeros_unicos(lista):
 
     return unicos
 
-# print(numeros_unicos([1, 2, 3, 3, 4, 1, 5]))
+print(numeros_unicos([1, 2, 3, 3, 4, 1, 5]))
 
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
