@@ -27,35 +27,22 @@ def suma_numeros(numeros):
 # Input: [1, 2, 2, 3, 4, 4, 5]
 # Output: [1, 3, 5]
 
-
-def numeros_unicos(lista):
-    numeros = {}
-    for valor in lista:
-        if valor in numeros:
-            numeros[valor] += 1
+def num_unicos(lista):
+    numeros={}
+    for num in lista:
+        if num in numeros:
+            numeros[num]+=1
         else:
-            numeros[valor] = 1
+            numeros[num] = 1
 
-    unicos = [valor for valor, cantidad in numeros.items() if cantidad == 1]
-
+    unicos= [valor for valor, clave in numeros.items() if clave == 1 ]
     return unicos
 
-def numeros_unicos(lista):
-    numeros = {}
-    for valor in lista:
-        if valor in numeros:
-            numeros[valor] += 1
-        else:
-            numeros[valor] = 1
+print(num_unicos([1,2,2,3,4,4,5]))
 
-    unicos = []
-    for valor, cantidad in numeros.items():
-        if cantidad == 1:
-            unicos.append(valor)
 
-    return unicos
 
-print(numeros_unicos([1, 2, 3, 3, 4, 1, 5]))
+
 
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
@@ -67,3 +54,8 @@ print(numeros_unicos([1, 2, 3, 3, 4, 1, 5]))
 #     return count
 
 # print(count_letters("palindromo"))
+
+#  Crear un diccionario con la longitud de palabras como valores:
+
+# Puedes crear un diccionario donde las claves sean palabras y 
+# los valores la longitud de cada palabra.
