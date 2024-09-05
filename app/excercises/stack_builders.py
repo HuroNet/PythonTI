@@ -60,10 +60,10 @@ print(numeros_unicos([1, 2, 3, 3, 4, 1, 5]))
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
 
-def count_letters(palabra):
-    count=0
-    for letra in palabra:
-        count += letra
-    return count
+# def count_letters(palabra):
+#     count=0
+#     for letra in palabra:
+#         count += letra
+#     return count
 
-print(count_letters("palindromo"))
+# print(count_letters("palindromo"))
