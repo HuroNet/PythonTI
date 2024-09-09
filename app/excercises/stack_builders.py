@@ -36,9 +36,13 @@ def num_unicos(lista):
             numeros[num] = 1
     print("los numeros de la lista", numeros)
     # unicos= [valor for valor, clave in numeros.items() if clave == 1 ]
-    unicos = []
-    for clave in numeros:
-        print(clave)
+    unicos=[]
+    for num in lista:
+        count = lista.count(num)
+
+        if count ==1:
+            unicos.append(num)
+
 
     return unicos
 
