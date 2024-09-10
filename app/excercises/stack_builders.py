@@ -39,6 +39,7 @@ def num_unicos(lista):
     unicos=[]
     for num in lista:
         count = lista.count(num)
+        # add some variables 
 
         if count ==1:
             unicos.append(num)
