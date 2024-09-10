@@ -47,7 +47,7 @@ def num_unicos(lista):
 
     return unicos
 
-print(num_unicos([1,2,2,3,4,4,5]))
+print(num_unicos([1,2,2,3,4,4,5,8,8,2,3,4]))
 
 
 
