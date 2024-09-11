@@ -27,30 +27,28 @@ def suma_numeros(numeros):
 # Input: [1, 2, 2, 3, 4, 4, 5]
 # Output: [1, 3, 5]
 
+
 def num_unicos(lista):
-    numeros={}
+    numeros = {}
     for num in lista:
         if num in numeros:
-            numeros[num]+=1
+            numeros[num] += 1
         else:
             numeros[num] = 1
     print("los numeros de la lista", numeros)
     # unicos= [valor for valor, clave in numeros.items() if clave == 1 ]
-    unicos=[]
+    unicos = []
     for num in lista:
         count = lista.count(num)
-        # add some variables 
+        # add some variables
 
-        if count ==1:
+        if count == 1:
             unicos.append(num)
-
 
     return unicos
 
-print(num_unicos([1,2,2,3,4,4,5,8,8,2,3,4]))
 
-
-
+print(num_unicos([1, 2, 2, 3, 4, 4, 5, 8, 8, 2, 3, 4]))
 
 
 # Contar vocales y consonantes: Escribe una función que cuente el
@@ -66,5 +64,5 @@ print(num_unicos([1,2,2,3,4,4,5,8,8,2,3,4]))
 
 #  Crear un diccionario con la longitud de palabras como valores:
 
-# Puedes crear un diccionario donde las claves sean palabras y 
+# Puedes crear un diccionario donde las claves sean palabras y
 # los valores la longitud de cada palabra.
