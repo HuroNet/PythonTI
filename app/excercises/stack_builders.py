@@ -54,15 +54,7 @@ print(num_unicos([1, 2, 2, 3, 4, 4, 5, 8, 8, 2, 3, 4]))
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
 
-# def count_letters(palabra):
-#     count=0
-#     for letra in palabra:
-#         count += letra
-#     return count
+def count_letters(palabra):
+     return 0
 
-# print(count_letters("palindromo"))
-
-#  Crear un diccionario con la longitud de palabras como valores:
-
-# Puedes crear un diccionario donde las claves sean palabras y
-# los valores la longitud de cada palabra.
+print(count_letters("palindromo"))
