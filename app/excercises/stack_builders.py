@@ -36,14 +36,15 @@ def num_unicos(lista):
         else:
             numeros[num] = 1
     print("los numeros de la lista", numeros)
-    # unicos= [valor for valor, clave in numeros.items() if clave == 1 ]
-    unicos = []
-    for num in lista:
-        count = lista.count(num)
-        # add some variables
+    unicos= [valor for valor, clave in numeros.items() if clave == 1 ]
+    unicos = [clave for clave, valor in numeros.items() if valor == 1]
+    # unicos = []
+    # for num in lista:
+    #     count = lista.count(num)
+    #     # add some variables
 
-        if count == 1:
-            unicos.append(num)
+    #     if count == 1:
+    #         unicos.append(num)
 
     return unicos
 
@@ -54,7 +55,13 @@ print(num_unicos([1, 2, 2, 3, 4, 4, 5, 8, 8, 2, 3, 4]))
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
 
+
 def count_letters(palabra):
-     return 0
+    vocales = ["a", "e", "i", "o", "u"]
+    palabra = palabra.lower()
+    for letra in palabra:
+        print(letra)
+    return 0
+
 
 print(count_letters("palindromo"))
