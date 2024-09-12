@@ -56,16 +56,15 @@ def num_unicos(lista):
 def count_letters(palabra):
     diccionario={"vocales":0,"consonantes":0}
     vocales = ["a", "e", "i", "o", "u"]
+    alfabeto = "abcdefghijklmnopqrstuvwxyz"
     palabra = palabra.lower()
     
     for letra in palabra:
-        if letra in vocales:
-            diccionario['vocales'] +=1
-        else:
-            diccionario["consonantes"] +=1
-
-    
-            
+        if letra in alfabeto:
+            if letra in vocales:
+                diccionario['vocales'] +=1
+            else:
+                diccionario["consonantes"] +=1
 
     return diccionario
 
