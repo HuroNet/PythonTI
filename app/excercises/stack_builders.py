@@ -63,6 +63,8 @@ def count_letters(palabra):
             diccionario['vocales'] +=1
         else:
             diccionario["consonantes"] +=1
+
+    
             
 
     return diccionario
