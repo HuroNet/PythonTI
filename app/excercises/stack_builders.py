@@ -48,7 +48,7 @@ def num_unicos(lista):
     return unicos
 
 
-print(num_unicos([1, 2, 2, 3, 4, 4, 5, 8, 8, 2, 3, 4,1,1,7]))
+print(num_unicos([1, 2, 2, 3, 4, 4, 5, 8, 8, 2, 3, 4, 1, 1, 7]))
 
 
 # Contar vocales y consonantes: Escribe una función que cuente el
