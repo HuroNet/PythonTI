@@ -27,43 +27,47 @@ def suma_numeros(numeros):
 # Input: [1, 2, 2, 3, 4, 4, 5]
 # Output: [1, 3, 5]
 
+
 def num_unicos(lista):
-    numeros={}
+    numeros = {}
     for num in lista:
         if num in numeros:
-            numeros[num]+=1
+            numeros[num] += 1
         else:
             numeros[num] = 1
     print("los numeros de la lista", numeros)
-    # unicos= [valor for valor, clave in numeros.items() if clave == 1 ]
-    unicos=[]
-    for num in lista:
-        count = lista.count(num)
+    unicos = [clave for clave, valor in numeros.items() if valor == 1]
+    # unicos = []
+    # for num in lista:
+    #     count = lista.count(num)
+    #     # add some variables
 
-        if count ==1:
-            unicos.append(num)
-
+    #     if count == 1:
+    #         unicos.append(num)
 
     return unicos
 
-print(num_unicos([1,2,2,3,4,4,5]))
 
-
-
+# print(num_unicos([1, 2, 2, 3, 4, 4, 5, 8, 8, 2, 3, 4, 1, 1, 7]))
 
 
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
+def count_letters(palabra):
+    diccionario={"vocales":0,"consonantes":0}
+    vocales = ["a", "e", "i", "o", "u"]
+    palabra = palabra.lower()
+    
+    for letra in palabra:
+        if letra in vocales:
+            diccionario['vocales'] +=1
+        else:
+            diccionario["consonantes"] +=1
 
-# def count_letters(palabra):
-#     count=0
-#     for letra in palabra:
-#         count += letra
-#     return count
+    
+            
 
-# print(count_letters("palindromo"))
+    return diccionario
 
-#  Crear un diccionario con la longitud de palabras como valores:
 
-# Puedes crear un diccionario donde las claves sean palabras y 
-# los valores la longitud de cada palabra.
+print(count_letters("palindromo"))
