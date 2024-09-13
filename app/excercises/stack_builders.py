@@ -87,8 +87,12 @@ def segundo_grande(lista):
 # lo mismo pero sin funciones
 
 def seg_grande_x(lista):
-    for i in range(lista):
-        print(i)
-    return 0
+    
+    n=len(lista)
+    for i in range(0,n-1):
+        for j in range(n-1-i):
+            if lista[j] > lista[j+1]:
+                lista[j],lista[j+1]=lista[j+1],lista[j]
+    return lista[-2]
 
 print(seg_grande_x([1,3,4,3,4,23,45,5]))
