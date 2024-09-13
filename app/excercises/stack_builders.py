@@ -70,3 +70,7 @@ def count_letters(palabra):
 
 
 # print(count_letters("palindromo"))
+# Buscar el segundo número más grande
+
+# #     Descripción: Escribe una función que reciba una lista de 
+# # números y devuelva el segundo número más grande.
