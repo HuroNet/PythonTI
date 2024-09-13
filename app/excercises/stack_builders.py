@@ -72,5 +72,23 @@ def count_letters(palabra):
 # print(count_letters("palindromo"))
 # Buscar el segundo número más grande
 
-# #     Descripción: Escribe una función que reciba una lista de 
+# #     Descripción: Escribe una función que reciba una lista de
 # # números y devuelva el segundo número más grande.
+
+
+def segundo_grande(lista):
+    lista = sorted(lista)
+
+    return lista[-2]
+
+
+# print(segundo_grande([1, 2, 3, 5, 6, 7, 3, 98]))
+
+# lo mismo pero sin funciones
+
+def seg_grande_x(lista):
+    for i in range(lista):
+        print(i)
+    return 0
+
+print(seg_grande_x([1,3,4,3,4,23,45,5]))
