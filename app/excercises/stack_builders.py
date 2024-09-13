@@ -54,20 +54,47 @@ def num_unicos(lista):
 # Contar vocales y consonantes: Escribe una función que cuente el
 # número de vocales y consonantes en una cadena.
 def count_letters(palabra):
-    diccionario={"vocales":0,"consonantes":0}
+    diccionario = {"vocales": 0, "consonantes": 0}
     vocales = ["a", "e", "i", "o", "u"]
+    alfabeto = "abcdefghijklmnopqrstuvwxyz"
     palabra = palabra.lower()
-    
-    for letra in palabra:
-        if letra in vocales:
-            diccionario['vocales'] +=1
-        else:
-            diccionario["consonantes"] +=1
 
-    
-            
+    for letra in palabra:
+        if letra in alfabeto:
+            if letra in vocales:
+                diccionario["vocales"] += 1
+            else:
+                diccionario["consonantes"] += 1
 
     return diccionario
 
 
-print(count_letters("palindromo"))
+# print(count_letters("palindromo"))
+# Buscar el segundo número más grande
+
+# #     Descripción: Escribe una función que reciba una lista de
+# # números y devuelva el segundo número más grande.
+
+
+def segundo_grande(lista):
+    lista = sorted(lista)
+
+    return lista[-2]
+
+
+# print(segundo_grande([1, 2, 3, 5, 6, 7, 3, 98]))
+
+# lo mismo pero sin funciones
+
+
+def seg_grande_x(lista):
+
+    n = len(lista)
+    for i in range(0, n - 1):
+        for j in range(n - 1 - i):
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+    return lista[-2]
+
+
+print(seg_grande_x([1, 3, 4, 3, 4, 23, 45, 5]))
