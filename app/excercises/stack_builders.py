@@ -97,4 +97,13 @@ def seg_grande_x(lista):
     return lista[-2]
 
 
-print(seg_grande_x([1, 3, 4, 3, 4, 23, 45, 5]))
+# print(seg_grande_x([1, 3, 4, 3, 4, 23, 45, 5]))
+
+# ahora vamos hacer mediante un ingreso como string
+
+def seg_num_string(*numero):
+    lista=sorted(set(numero))
+
+    return lista[-2]                                      
+
+# print(seg_num_string(1,5,5,7,4,3,2,6,5))
