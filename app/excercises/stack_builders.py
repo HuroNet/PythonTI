@@ -97,4 +97,36 @@ def seg_grande_x(lista):
     return lista[-2]
 
 
-print(seg_grande_x([1, 3, 4, 3, 4, 23, 45, 5]))
+# print(seg_grande_x([1, 3, 4, 3, 4, 23, 45, 5]))
+
+# ahora vamos hacer mediante un ingreso como string
+
+def seg_num_string(*numero):
+    lista=sorted(set(numero))
+
+    return lista[-2]                                      
+
+# print(seg_num_string(1,5,5,7,4,3,2,6,5))
+
+
+# 6. Ordenar una lista de strings por longitud
+
+#     Descripción: Dada una lista de cadenas de
+# texto, escribe una función que ordene la lista
+# por la longitud de las cadenas, de menor a mayor.
+#     Ejemplo:
+
+def order_list_string(string):
+    max_string= max(string,key=len)
+    return max_string,len(max_string)                                                       
+
+# print(order_list_string(["Hola", "Mundo", "a", "Python"]))
+
+def ordenar_mayor(string):
+    dicc={}
+    for valor in string:
+        dicc[valor]=len(valor)
+    maximo=max(dicc,key=len)
+    return maximo, len(maximo)
+
+print(ordenar_mayor(["Hola", "Mundo", "a", "Python"]))
