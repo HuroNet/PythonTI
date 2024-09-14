@@ -101,10 +101,12 @@ def seg_grande_x(lista):
 
 # ahora vamos hacer mediante un ingreso como string
 
-def seg_num_string(*numero):
-    lista=sorted(set(numero))
 
-    return lista[-2]                                      
+def seg_num_string(*numero):
+    lista = sorted(set(numero))
+
+    return lista[-2]
+
 
 # print(seg_num_string(1,5,5,7,4,3,2,6,5))
 
@@ -116,18 +118,22 @@ def seg_num_string(*numero):
 # por la longitud de las cadenas, de menor a mayor.
 #     Ejemplo:
 
+
 def order_list_string(string):
-    max_string= max(string,key=len)
-    return max_string,len(max_string)                                                       
+    max_string = max(string, key=len)
+    return max_string, len(max_string)
+
 
 # print(order_list_string(["Hola", "Mundo", "a", "Python"]))
 
+
 def ordenar_mayor(string):
-    dicc={}
+    dicc = {}
     for valor in string:
-        dicc[valor]=len(valor)
-    maximo=max(dicc,key=len)
+        dicc[valor] = len(valor)
+    maximo = max(dicc, key=len)
     return maximo, len(maximo)
+
 
 # print(ordenar_mayor(["Hola", "Mundo", "a", "Python"]))
 
@@ -138,16 +144,18 @@ def ordenar_mayor(string):
 # la frecuencia de cada palabra en el texto.
 #     Ejemplo:
 
+
 def frecuencia_palabra(palabras):
-    diccionario={}
-    palabras =  palabras.replace(",","")
+    diccionario = {}
+    palabras = palabras.replace(",", "")
     palabras = palabras.lower()
-    pala= palabras.split(" ")
+    pala = palabras.split(" ")
     for palabra in pala:
         if palabra in diccionario:
-            diccionario[palabra]+=1
+            diccionario[palabra] += 1
         else:
-            diccionario[palabra]=1
+            diccionario[palabra] = 1
     return diccionario
+
 
 print(frecuencia_palabra("hola Hola, mundo, como van hola"))
