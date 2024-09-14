@@ -158,4 +158,21 @@ def frecuencia_palabra(palabras):
     return diccionario
 
 
-print(frecuencia_palabra("hola Hola, mundo, como van hola"))
+# print(frecuencia_palabra("hola Hola, mundo, como van hola"))
+
+# Subcadena más larga sin caracteres repetidos
+def longest_substraing(cadena):
+    inicio=0
+    max_longitud=0
+    caracteres=set()
+    for fin in range(len(cadena)):
+        while cadena[fin] in caracteres:
+            caracteres.remove(cadena[inicio])
+            inicio+=1
+        caracteres.add(cadena[fin])
+        print(caracteres)
+
+        max_longitud = max(max_longitud, fin - inicio + 1)
+    return max_longitud
+
+print(longest_substraing("abcabcbb"))
