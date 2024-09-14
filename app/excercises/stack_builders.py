@@ -129,4 +129,25 @@ def ordenar_mayor(string):
     maximo=max(dicc,key=len)
     return maximo, len(maximo)
 
-print(ordenar_mayor(["Hola", "Mundo", "a", "Python"]))
+# print(ordenar_mayor(["Hola", "Mundo", "a", "Python"]))
+
+# 7. Contar la frecuencia de palabras en un texto
+
+#     Descripción: Escribe una función que tome un
+# texto como entrada y devuelva un diccionario con
+# la frecuencia de cada palabra en el texto.
+#     Ejemplo:
+
+def frecuencia_palabra(palabras):
+    diccionario={}
+    palabras =  palabras.replace(",","")
+    palabras = palabras.lower()
+    pala= palabras.split(" ")
+    for palabra in pala:
+        if palabra in diccionario:
+            diccionario[palabra]+=1
+        else:
+            diccionario[palabra]=1
+    return diccionario
+
+print(frecuencia_palabra("hola Hola, mundo, como van hola"))
