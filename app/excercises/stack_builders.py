@@ -329,3 +329,18 @@ def suma_digitos(dijitos):
 
 
 # print(suma_digitos(1234))
+
+# 10. Fibonacci
+
+#     Descripción: Genera los primeros n números de la secuencia de Fibonacci.
+#     Entrada: 5
+#     Salida: [0, 1, 1, 2, 3]
+
+def fibonacci(number):
+    fibo=[0,1]
+    for i in range(2, number):
+        fibo.append(fibo[-1] + fibo[-2])
+        print(fibo[-1] + fibo[-2])
+    return fibo
+
+print(fibonacci(5))
