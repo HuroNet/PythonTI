@@ -312,4 +312,20 @@ def es_primo(numero):
         return True
 
 
-print(es_primo(6))
+# print(es_primo(6))
+# 9. Suma de dígitos
+
+#     Descripción: Calcula la suma de los dígitos de un número.
+#     Entrada: 1234
+#     Salida: 10
+
+
+def suma_digitos(dijitos):
+
+    suma = 0
+    for dijito in str(dijitos):
+        suma += int(dijito)
+    return suma
+
+
+print(suma_digitos(1234))
