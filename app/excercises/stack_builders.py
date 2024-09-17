@@ -160,20 +160,22 @@ def frecuencia_palabra(palabras):
 
 # print(frecuencia_palabra("hola Hola, mundo, como van hola"))
 
+
 # Subcadena más larga sin caracteres repetidos
 def longest_substraing(cadena):
-    inicio=0
-    max_longitud=0
-    caracteres=set()
+    inicio = 0
+    max_longitud = 0
+    caracteres = set()
     for fin in range(len(cadena)):
         while cadena[fin] in caracteres:
             caracteres.remove(cadena[inicio])
-            inicio+=1
+            inicio += 1
         caracteres.add(cadena[fin])
         print(caracteres)
 
         max_longitud = max(max_longitud, fin - inicio + 1)
     return max_longitud
+
 
 # print(longest_substraing("abcabcbb"))
 # 1. Invertir una cadena
@@ -182,12 +184,30 @@ def longest_substraing(cadena):
 #     Entrada: "Python"
 #     Salida: "nohtyP"
 
+
 def invertir_cadena(cadena):
     # cadena=cadena[::-1]
-    caracteres=[]
+    caracteres = []
     for letra in cadena:
         caracteres[letra] = caracteres + caracteres[letra]
     return cadena
 
+
 # print(invertir_cadena("HolaMundo"))
-print("hola mundo")
+
+
+# Suma de números en una lista
+
+#     Descripción: Suma todos los números en una lista.
+#     Entrada: [1, 2, 3, 4]
+#     Salida: 10
+
+
+def suma_de_numeros(lista):
+    suma = 0
+    for valor in lista:
+        suma += valor
+    return suma
+
+
+# print(suma_de_numeros([1,2,3,4]))
