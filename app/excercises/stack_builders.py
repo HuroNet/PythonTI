@@ -186,7 +186,6 @@ def longest_substraing(cadena):
 
 
 def invertir_cadena(cadena):
-    # cadena=cadena[::-1]
     caracteres = []
     for letra in cadena:
         caracteres[letra] = caracteres + caracteres[letra]
@@ -219,36 +218,77 @@ def suma_de_numeros(lista):
 #     Entrada: "radar"
 #     Salida: True
 
+
 def palindromo(frase):
-    reves= frase[::-1]
+    reves = frase[::-1]
     if frase == reves:
         return True
     else:
         return False
 
+
 # print(palindromo('radar'))
 
 # Inversa de un arreglo
 
+
 def inversa_arreglo(arreglo):
-    star=0
-    inversa=[]
-    end=len(arreglo) - 1  
-    for valor in range(len(arreglo)//2):
-        arreglo[star],arreglo[end]=arreglo[end],arreglo[star]
-        star+=1
-        end-+1
-        inversa=arreglo
+    star = 0
+    inversa = []
+    end = len(arreglo) - 1
+    for valor in range(len(arreglo) // 2):
+        arreglo[star], arreglo[end] = arreglo[end], arreglo[star]
+        star += 1
+        end - +1
+        inversa = arreglo
     return inversa
+
 
 # print(inversa_arreglo([1,2,4,6,3,2]))
 
+
 def inversa_con_funciones(lista):
-    inversa=[]
+    inversa = []
     for valor in lista:
-        inversa.insert(0,valor)
-        print("sec",valor)
-        
+        inversa.insert(0, valor)
+        print("sec", valor)
+
     return inversa
 
-print(inversa_con_funciones([1,2,4,6,3,2]))
+
+# # print(inversa_con_funciones([1,2,4,6,3,2]))
+
+# Buscar el número más grande
+
+#     Descripción: Encuentra el número más grande en una lista.
+#     Entrada: [3, 1, 4, 1, 5, 9]
+#     Salida: 9
+
+
+def numero_mas_grande(numeros):
+    number = sorted(numeros)
+
+    return number[-1]
+
+
+# print(numero_mas_grande([2,45,7,34,3]))
+
+# Contar la frecuencia de caracteres
+
+#     Descripción: Cuenta la frecuencia de cada carácter en una cadena.
+#     Entrada: "abracadabra"
+#     Salida: {'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1}
+
+
+def frecuencia_caracteres(string):
+    palabras = {}
+    for letra in string:
+        if letra in palabras:
+            palabras[letra] += 1
+        else:
+            palabras[letra] = 1
+
+    return palabras
+
+
+print(frecuencia_caracteres("abracadabra"))
