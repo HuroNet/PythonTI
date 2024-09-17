@@ -266,9 +266,12 @@ def inversa_con_funciones(lista):
 
 
 def numero_mas_grande(numeros):
-    number = sorted(numeros)
+    number = numeros[0]
+    for i in numeros:
+        if i > number:
+            number = i
 
-    return number[-1]
+    return number
 
 
 # print(numero_mas_grande([2,45,7,34,3]))
@@ -291,4 +294,38 @@ def frecuencia_caracteres(string):
     return palabras
 
 
-print(frecuencia_caracteres("abracadabra"))
+# print(frecuencia_caracteres("abracadabra"))
+
+# 8. Número primo
+
+#     Descripción: Verifica si un número es primo.
+#     Entrada: 7
+#     Salida: True
+
+
+def es_primo(numero):
+    if numero > 1:
+        for i in range(2, numero):
+            if numero % i == 0:
+                return False
+
+        return True
+
+
+# print(es_primo(6))
+# 9. Suma de dígitos
+
+#     Descripción: Calcula la suma de los dígitos de un número.
+#     Entrada: 1234
+#     Salida: 10
+
+
+def suma_digitos(dijitos):
+
+    suma = 0
+    for dijito in str(dijitos):
+        suma += int(dijito)
+    return suma
+
+
+# print(suma_digitos(1234))
