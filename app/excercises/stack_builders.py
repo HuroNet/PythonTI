@@ -190,7 +190,7 @@ def invertir_cadena(cadena):
     caracteres = []
     for letra in cadena:
         caracteres[letra] = caracteres + caracteres[letra]
-    return cadena
+    return caracteres
 
 
 # print(invertir_cadena("HolaMundo"))
@@ -211,3 +211,44 @@ def suma_de_numeros(lista):
 
 
 # print(suma_de_numeros([1,2,3,4]))
+
+
+# Palíndromo
+
+#     Descripción: Verifica si una cadena es un palíndromo.
+#     Entrada: "radar"
+#     Salida: True
+
+def palindromo(frase):
+    reves= frase[::-1]
+    if frase == reves:
+        return True
+    else:
+        return False
+
+# print(palindromo('radar'))
+
+# Inversa de un arreglo
+
+def inversa_arreglo(arreglo):
+    star=0
+    inversa=[]
+    end=len(arreglo) - 1  
+    for valor in range(len(arreglo)//2):
+        arreglo[star],arreglo[end]=arreglo[end],arreglo[star]
+        star+=1
+        end-+1
+        inversa=arreglo
+    return inversa
+
+# print(inversa_arreglo([1,2,4,6,3,2]))
+
+def inversa_con_funciones(lista):
+    inversa=[]
+    for valor in lista:
+        inversa.insert(0,valor)
+        print("sec",valor)
+        
+    return inversa
+
+print(inversa_con_funciones([1,2,4,6,3,2]))
