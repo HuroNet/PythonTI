@@ -175,4 +175,19 @@ def longest_substraing(cadena):
         max_longitud = max(max_longitud, fin - inicio + 1)
     return max_longitud
 
-print(longest_substraing("abcabcbb"))
+# print(longest_substraing("abcabcbb"))
+# 1. Invertir una cadena
+
+#     Descripción: Escribe una función que invierta una cadena.
+#     Entrada: "Python"
+#     Salida: "nohtyP"
+
+def invertir_cadena(cadena):
+    # cadena=cadena[::-1]
+    caracteres=[]
+    for letra in cadena:
+        caracteres[letra] = caracteres + caracteres[letra]
+    return cadena
+
+# print(invertir_cadena("HolaMundo"))
+print("hola mundo")
