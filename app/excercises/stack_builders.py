@@ -496,4 +496,20 @@ def dividir_cadena(cadena):
     cadena= cadena.split()
     return cadena
 
-print(dividir_cadena("Hola mundo"))
+# print(dividir_cadena("Hola mundo"))
+
+# 25. Encontrar la longitud de la cadena más larga
+
+#     Descripción: Encuentra la longitud de la cadena 
+# más larga en una lista de cadenas.
+#     Entrada: ["Hola", "Python", "Desarrollador"]
+#     Salida: 12
+
+def long_max_string(cadena):
+    diccionario= {}
+    for valor in cadena:
+        diccionario[valor]=len(valor)                                                                     
+    # return max(diccionario.values())
+    # return max(len(cadena, key=len)) solo con esta linea 
+
+print(long_max_string(["Hola", "Python", "Desarrollador"]))
