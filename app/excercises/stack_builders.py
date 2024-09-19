@@ -329,3 +329,171 @@ def suma_digitos(dijitos):
 
 
 # print(suma_digitos(1234))
+
+# 10. Fibonacci
+
+#     Descripción: Genera los primeros n números de la secuencia de Fibonacci.
+#     Entrada: 5
+#     Salida: [0, 1, 1, 2, 3]
+
+
+def fibonacci(number):
+    fibo = [0, 1]
+    for i in range(2, number):
+        fibo.append(fibo[-1] + fibo[-2])
+    return fibo
+
+
+# print(fibonacci(5))
+
+# 11. Contar palabras en una cadena
+
+#     Descripción: Cuenta el número de palabras en una cadena.
+#     Entrada: "Hola Mundo"
+#     Salida: 2
+
+
+def contar_palabras(palabras):
+    count = 0
+    palabras = palabras.split()
+    print(palabras)
+    for i in palabras:
+        count += 1
+    return count
+
+
+# print(contar_palabras("Hola Mundo"))
+
+# 12. Encontrar el índice de un elemento
+
+
+#     Descripción: Encuentra el índice de un elemento en una lista.
+#     Entrada: ([1, 2, 3], 2)
+#     Salida: 1
+def find_index(lista, numero):
+    for i in range(len(lista)):
+        if lista[i] == numero:
+            return i
+
+    return False
+
+
+# print(find_index([1,2,3],2))
+
+# 13. Eliminar duplicados de una lista
+
+#     Descripción: Elimina los elementos duplicados de una lista.
+#     Entrada: [1, 2, 2, 3, 4, 4]
+#     Salida: [1, 2, 3, 4]
+
+def eliminar_duplicados(lista):
+    numeros=[]
+
+    for numero in lista:
+        if numero not in  numeros:
+            numeros.append(numero)
+    return numeros
+
+# print(eliminar_duplicados([1,2,2,3,4,4]))
+
+# 14. Suma de pares en una lista
+
+#     Descripción: Suma los números pares en una lista.
+#     Entrada: [1, 2, 3, 4]
+#     Salida: 6
+
+def suma_pares(lista):
+    pares=[]
+    suma=0
+    for i in lista:
+        if i % 2 == 0:
+            pares.append(i)
+            suma +=i
+    # suma=sum(pares)
+    return suma
+
+# print(suma_pares([1,4,3,4]))
+
+# 15. Multiplicar elementos de una lista
+
+#     Descripción: Multiplica todos los elementos de una lista.
+#     Entrada: [1, 2, 3, 4]
+#     Salida: 24
+
+def multiplicar(lista):
+    resultado=1
+    for i in lista:
+        resultado *= i
+    return resultado
+
+# print(multiplicar([1,2,34]))
+
+# 17. Sumar dos matrices
+
+#     Descripción: Suma dos matrices del mismo tamaño.
+#     Entrada: ([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+#     Salida: [[6, 8], [10, 12]]
+
+def sum_matrices(matris1, matris2):
+    suma=[]
+    for i in range(len(matris1)):
+        fila=[]
+        for j in range(len(matris1[i])):
+            fila.append(matris1[i][j] + matris2[i][j])
+        suma.append(fila)
+    return suma
+# print(sum_matrices([[1, 2], [3, 4]], [[5, 6], [7, 8]]))
+
+# Calcular el factorial de un número
+
+#     Descripción: Calcula el factorial de un número.
+#     Entrada: 5
+#     Salida: 120
+
+def factorial(numero):
+    fact=1
+    for i in range(1,numero+1):
+        fact = fact * i 
+        i+=1       
+
+    return fact
+
+# # print(factorial(5))
+# Ordenar una lista de cadenas por longitud
+
+#     Descripción: Ordena una lista de cadenas por la longitud de las cadenas.
+#     Entrada: ["Hola", "Python", "Mundo"]
+#     Salida: ["Hola", "Mundo", "Python"]
+
+def ordenar_cadena(cadenas):
+    return sorted(cadenas, key=lambda x:len(x))
+# print(ordenar_cadena( ["Hola", "Python", "Mundo"]))
+
+# 23. Calcular la potencia de un número
+
+#     Descripción: Calcula la potencia de un número dado.
+#     Entrada: (2, 3)
+#     Salida: 8
+
+def potencia(numero1,numero2):
+    resultado=1
+    for i in range(1,numero2+1):
+        resultado = numero1 * resultado
+        i+=1
+    return resultado
+    # reutun numero1 ** numero2 como la mejor ocion 
+    # return pow(numero1, numero2)
+
+# print(potencia(2,3))
+
+# 24. Dividir una cadena en palabras
+
+#     Descripción: Divide una cadena en palabras usando espacios como delimitadores.
+#     Entrada: "Hola mundo"
+#     Salida: ["Hola", "mundo"]
+
+def dividir_cadena(cadena):
+    cadena= cadena.split()
+    return cadena
+
+print(dividir_cadena("Hola mundo"))
