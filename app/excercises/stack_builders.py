@@ -478,8 +478,10 @@ def ordenar_cadena(cadenas):
 def potencia(numero1,numero2):
     resultado=1
     for i in range(1,numero2+1):
-        
-        resultado = numero1 * i
+        resultado = numero1 * resultado
+        i+=1
     return resultado
+    # reutun numero1 ** numero2 como la mejor ocion 
+    # return pow(numero1, numero2)
 
 print(potencia(2,3))
