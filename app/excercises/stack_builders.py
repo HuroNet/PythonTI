@@ -466,8 +466,20 @@ def factorial(numero):
 #     Salida: ["Hola", "Mundo", "Python"]
 
 def ordenar_cadena(cadenas):
-#     diccionario={}
-#     for palabra in cadenas:
-#         diccionario[palabra] = len(palabra)        
-#     return sorted(diccionario.keys(), key=lambda x: diccionario[x])
+    return sorted(cadenas, key=lambda x:len(x))
 # print(ordenar_cadena( ["Hola", "Python", "Mundo"]))
+
+# 23. Calcular la potencia de un número
+
+#     Descripción: Calcula la potencia de un número dado.
+#     Entrada: (2, 3)
+#     Salida: 8
+
+def potencia(numero1,numero2):
+    resultado=1
+    for i in range(1,numero2+1):
+        
+        resultado = numero1 * i
+    return resultado
+
+print(potencia(2,3))
