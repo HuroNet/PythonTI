@@ -484,4 +484,16 @@ def potencia(numero1,numero2):
     # reutun numero1 ** numero2 como la mejor ocion 
     # return pow(numero1, numero2)
 
-print(potencia(2,3))
+# print(potencia(2,3))
+
+# 24. Dividir una cadena en palabras
+
+#     Descripción: Divide una cadena en palabras usando espacios como delimitadores.
+#     Entrada: "Hola mundo"
+#     Salida: ["Hola", "mundo"]
+
+def dividir_cadena(cadena):
+    cadena= cadena.split()
+    return cadena
+
+print(dividir_cadena("Hola mundo"))
