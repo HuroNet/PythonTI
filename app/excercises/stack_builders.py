@@ -512,4 +512,50 @@ def long_max_string(cadena):
     # return max(diccionario.values())
     # return max(len(cadena, key=len)) solo con esta linea 
 
-print(long_max_string(["Hola", "Python", "Desarrollador"]))
+# print(long_max_string(["Hola", "Python", "Desarrollador"]))
+
+# 26. Invertir una lista
+
+#     Descripción: Invierte una lista.
+#     Entrada: [1, 2, 3, 4]
+#     Salida: [4, 3, 2, 1]
+
+def inverse_list(lista):
+    inversa=[]
+    for valor in lista:
+        inversa.insert(0,valor)
+    return inversa
+    # return lista[::-1]
+    #return lista.reverse()
+
+# print(inverse_list([1,2,83,4]))
+
+# usamos punteros para hacer el ejercicio
+
+def inverse_punteros(lista):
+    lista=sorted(lista)
+    inicio=0
+    fin=len(lista)-1
+    print(fin)
+    while inicio<fin:
+        lista[inicio],lista[fin]=lista[fin],lista[inicio]
+        inicio+=1
+        fin-=1
+    return lista
+
+# print(inverse_punteros([1,4,53,2,3]))
+
+# ahora usamos solo while sin punteros
+def inverse_while(lista):
+    lista=sorted(lista)
+    inversa=[]
+    inicio=0
+    i=len(lista)-1
+    while i >= inicio:
+        inversa.append(lista[i])
+        print(i)
+        i-=1
+
+    return inversa
+
+print(inverse_while([1,43,21,232,3]))
