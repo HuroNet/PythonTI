@@ -386,13 +386,15 @@ def find_index(lista, numero):
 #     Entrada: [1, 2, 2, 3, 4, 4]
 #     Salida: [1, 2, 3, 4]
 
+
 def eliminar_duplicados(lista):
-    numeros=[]
+    numeros = []
 
     for numero in lista:
-        if numero not in  numeros:
+        if numero not in numeros:
             numeros.append(numero)
     return numeros
+
 
 # print(eliminar_duplicados([1,2,2,3,4,4]))
 
@@ -402,15 +404,17 @@ def eliminar_duplicados(lista):
 #     Entrada: [1, 2, 3, 4]
 #     Salida: 6
 
+
 def suma_pares(lista):
-    pares=[]
-    suma=0
+    pares = []
+    suma = 0
     for i in lista:
         if i % 2 == 0:
             pares.append(i)
-            suma +=i
+            suma += i
     # suma=sum(pares)
     return suma
+
 
 # print(suma_pares([1,4,3,4]))
 
@@ -420,11 +424,13 @@ def suma_pares(lista):
 #     Entrada: [1, 2, 3, 4]
 #     Salida: 24
 
+
 def multiplicar(lista):
-    resultado=1
+    resultado = 1
     for i in lista:
         resultado *= i
     return resultado
+
 
 # print(multiplicar([1,2,34]))
 
@@ -434,14 +440,17 @@ def multiplicar(lista):
 #     Entrada: ([[1, 2], [3, 4]], [[5, 6], [7, 8]])
 #     Salida: [[6, 8], [10, 12]]
 
+
 def sum_matrices(matris1, matris2):
-    suma=[]
+    suma = []
     for i in range(len(matris1)):
-        fila=[]
+        fila = []
         for j in range(len(matris1[i])):
             fila.append(matris1[i][j] + matris2[i][j])
         suma.append(fila)
     return suma
+
+
 # print(sum_matrices([[1, 2], [3, 4]], [[5, 6], [7, 8]]))
 
 # Calcular el factorial de un número
@@ -450,13 +459,15 @@ def sum_matrices(matris1, matris2):
 #     Entrada: 5
 #     Salida: 120
 
+
 def factorial(numero):
-    fact=1
-    for i in range(1,numero+1):
-        fact = fact * i 
-        i+=1       
+    fact = 1
+    for i in range(1, numero + 1):
+        fact = fact * i
+        i += 1
 
     return fact
+
 
 # # print(factorial(5))
 # Ordenar una lista de cadenas por longitud
@@ -465,8 +476,11 @@ def factorial(numero):
 #     Entrada: ["Hola", "Python", "Mundo"]
 #     Salida: ["Hola", "Mundo", "Python"]
 
+
 def ordenar_cadena(cadenas):
-    return sorted(cadenas, key=lambda x:len(x))
+    return sorted(cadenas, key=lambda x: len(x))
+
+
 # print(ordenar_cadena( ["Hola", "Python", "Mundo"]))
 
 # 23. Calcular la potencia de un número
@@ -475,14 +489,16 @@ def ordenar_cadena(cadenas):
 #     Entrada: (2, 3)
 #     Salida: 8
 
-def potencia(numero1,numero2):
-    resultado=1
-    for i in range(1,numero2+1):
+
+def potencia(numero1, numero2):
+    resultado = 1
+    for i in range(1, numero2 + 1):
         resultado = numero1 * resultado
-        i+=1
+        i += 1
     return resultado
-    # reutun numero1 ** numero2 como la mejor ocion 
+    # reutun numero1 ** numero2 como la mejor ocion
     # return pow(numero1, numero2)
+
 
 # print(potencia(2,3))
 
@@ -492,25 +508,29 @@ def potencia(numero1,numero2):
 #     Entrada: "Hola mundo"
 #     Salida: ["Hola", "mundo"]
 
+
 def dividir_cadena(cadena):
-    cadena= cadena.split()
+    cadena = cadena.split()
     return cadena
+
 
 # print(dividir_cadena("Hola mundo"))
 
 # 25. Encontrar la longitud de la cadena más larga
 
-#     Descripción: Encuentra la longitud de la cadena 
+#     Descripción: Encuentra la longitud de la cadena
 # más larga en una lista de cadenas.
 #     Entrada: ["Hola", "Python", "Desarrollador"]
 #     Salida: 12
 
+
 def long_max_string(cadena):
-    diccionario= {}
+    diccionario = {}
     for valor in cadena:
-        diccionario[valor]=len(valor)                                                                     
+        diccionario[valor] = len(valor)
     # return max(diccionario.values())
-    # return max(len(cadena, key=len)) solo con esta linea 
+    # return max(len(cadena, key=len)) solo con esta linea
+
 
 # print(long_max_string(["Hola", "Python", "Desarrollador"]))
 
@@ -520,42 +540,48 @@ def long_max_string(cadena):
 #     Entrada: [1, 2, 3, 4]
 #     Salida: [4, 3, 2, 1]
 
+
 def inverse_list(lista):
-    inversa=[]
+    inversa = []
     for valor in lista:
-        inversa.insert(0,valor)
+        inversa.insert(0, valor)
     return inversa
     # return lista[::-1]
-    #return lista.reverse()
+    # return lista.reverse()
+
 
 # print(inverse_list([1,2,83,4]))
 
 # usamos punteros para hacer el ejercicio
 
+
 def inverse_punteros(lista):
-    lista=sorted(lista)
-    inicio=0
-    fin=len(lista)-1
+    lista = sorted(lista)
+    inicio = 0
+    fin = len(lista) - 1
     print(fin)
-    while inicio<fin:
-        lista[inicio],lista[fin]=lista[fin],lista[inicio]
-        inicio+=1
-        fin-=1
+    while inicio < fin:
+        lista[inicio], lista[fin] = lista[fin], lista[inicio]
+        inicio += 1
+        fin -= 1
     return lista
+
 
 # print(inverse_punteros([1,4,53,2,3]))
 
+
 # ahora usamos solo while sin punteros
 def inverse_while(lista):
-    lista=sorted(lista)
-    inversa=[]
-    inicio=0
-    i=len(lista)-1
+    lista = sorted(lista)
+    inversa = []
+    inicio = 0
+    i = len(lista) - 1
     while i >= inicio:
         inversa.append(lista[i])
         print(i)
-        i-=1
+        i -= 1
 
     return inversa
 
-print(inverse_while([1,43,21,232,3]))
+
+# print(inverse_while([1,43,21,232,3]))
