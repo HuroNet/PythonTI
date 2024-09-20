@@ -186,13 +186,13 @@ def longest_substraing(cadena):
 
 
 def invertir_cadena(cadena):
-    caracteres = []
+    caracteres = ""
     for letra in cadena:
-        caracteres[letra] = caracteres + caracteres[letra]
+        caracteres = letra + caracteres
     return caracteres
 
 
-# print(invertir_cadena("HolaMundo"))
+# print(invertir_cadena("Hola Mundo"))
 
 
 # Suma de números en una lista
@@ -585,3 +585,111 @@ def inverse_while(lista):
 
 
 # print(inverse_while([1,43,21,232,3]))
+
+# 27. Eliminar elementos nulos de una lista
+
+#     Descripción: Elimina los elementos nulos de una lista.
+#     Entrada: [1, None, 2, None, 3]
+#     Salida: [1, 2, 3]
+
+
+def delete_nulls(lista):
+    for i in lista:
+        lista.remove(None)
+    # return lista
+    # return [x for x in lista if x is not None]
+    return list(filter(lambda x: x is not None, lista))
+
+    # otro.....
+    # lista = [1, None, 2, None, 3]
+    # lista_sin_none = []
+    # for elemento in lista:
+    #     if elemento is not None:
+    #         lista_sin_none.append(elemento)
+    # print(lista_sin_none)  # Salida: [1, 2, 3]
+
+
+# print(delete_nulls([1, None,2,None]))
+
+# 30. Eliminar los caracteres no alfabéticos
+
+#     Descripción: Elimina los caracteres no alfabéticos de una cadena.
+#     Entrada: "H0la, Mundo!"
+#     Salida: "HlaMundo"
+
+
+def delete_no_alfabeticos(string):
+    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    string = string.replace(",", "").replace(" ", "")
+    new_string = ""
+    # string=[x for x in string if x is not alfabeto]
+    for dato in string:
+        if dato in alfabeto:
+            new_string += dato
+    return new_string
+
+
+# print(delete_no_alfabeticos("H0la, Mundo!"))
+
+
+def no_alph_join(string):
+    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    palabras = []
+    for valor in string:
+        if valor in alfabeto:
+            palabras.append(valor)
+
+    return "".join(palabras)
+
+
+# # print(no_alph_join("H0la, Mundo!"))
+
+# 31. Encontrar el índice de la primera aparición de un carácter
+
+#     Descripción: Encuentra el índice de la primera
+# aparición de un carácter en una cadena.
+#     Entrada: ("Python", "t")
+#     Salida: 2
+
+
+def encontrar_incide(palabra, target):
+    for i in range(0, len(palabra)):
+        if target == palabra[i]:
+            return i
+    return -1
+
+
+# print(encontrar_incide("python","t"))
+
+# 32. Sumar los números en un rango
+
+#     Descripción: Suma todos los números en un rango dado.
+#     Entrada: (1, 4)
+#     Salida: 10
+
+
+def suma_in_range(number1, number2):
+    suma = 0
+    for i in range(number1, number2 + 1):
+        suma += i
+    return suma
+    # return sum(range(number1,number2+1))
+
+
+# print(suma_in_range(1, 4))
+
+# 33. Determinar el número de letras en una cadena
+
+#     Descripción: Cuenta el número de letras en una cadena.
+#     Entrada: "Hola Mundo"
+#     Salida: 8
+
+def numero_letras(cadena):
+    cambio = cadena.replace(" ","")
+    count=0
+    for i in range(0,len(cambio)):
+        count+=1
+        print(count,i)
+    return count
+# print(numero_letras("Hola Mundo"))
+
