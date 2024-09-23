@@ -185,16 +185,6 @@ def longest_substraing(cadena):
 #     Salida: "nohtyP"
 
 
-def invertir_cadena(cadena):
-    caracteres = ""
-    for letra in cadena:
-        caracteres = letra + caracteres
-    return caracteres
-
-
-# print(invertir_cadena("Hola Mundo"))
-
-
 # Suma de números en una lista
 
 #     Descripción: Suma todos los números en una lista.
