@@ -642,7 +642,7 @@ def no_alph_join(string):
     return "".join(palabras)
 
 
-# # print(no_alph_join("H0la, Mundo!"))
+print(no_alph_join("H0la, Mundo!"))
 
 # 31. Encontrar el índice de la primera aparición de un carácter
 
