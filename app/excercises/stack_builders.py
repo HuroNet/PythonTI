@@ -504,7 +504,7 @@ def potencia(numero1, numero2):
 
 # 24. Dividir una cadena en palabras
 
-#     Descripción: Divide una cadena en palabras usando 
+# Descripción: Divide una cadena en palabras usando
 # espacios como delimitadores.
 #     Entrada: "Hola mundo"
 #     Salida: ["Hola", "mundo"]
