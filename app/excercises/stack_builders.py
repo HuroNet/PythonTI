@@ -504,7 +504,8 @@ def potencia(numero1, numero2):
 
 # 24. Dividir una cadena en palabras
 
-#     Descripción: Divide una cadena en palabras usando espacios como delimitadores.
+#     Descripción: Divide una cadena en palabras usando 
+# espacios como delimitadores.
 #     Entrada: "Hola mundo"
 #     Salida: ["Hola", "mundo"]
 
@@ -644,7 +645,8 @@ def no_alph_join(string):
 
 # print(no_alph_join("H0la, Mundo!"))
 
-# 31. Encontrar el índice de la primera aparición de un carácter
+# 31. Encontrar el índice de la primera aparición de
+#  un carácter
 
 #     Descripción: Encuentra el índice de la primera
 # aparición de un carácter en una cadena.
@@ -663,7 +665,8 @@ def encontrar_incide(palabra, target):
 
 # 32. Sumar los números en un rango
 
-#     Descripción: Suma todos los números en un rango dado.
+#     Descripción: Suma todos los números en un
+#  rango dado.
 #     Entrada: (1, 4)
 #     Salida: 10
 
