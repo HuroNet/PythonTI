@@ -642,7 +642,7 @@ def no_alph_join(string):
     return "".join(palabras)
 
 
-print(no_alph_join("H0la, Mundo!"))
+# print(no_alph_join("H0la, Mundo!"))
 
 # 31. Encontrar el índice de la primera aparición de un carácter
 
@@ -659,7 +659,7 @@ def encontrar_incide(palabra, target):
     return -1
 
 
-print(encontrar_incide("python","t"))
+# print(encontrar_incide("python","t"))
 
 # 32. Sumar los números en un rango
 
@@ -684,12 +684,14 @@ def suma_in_range(number1, number2):
 #     Entrada: "Hola Mundo"
 #     Salida: 8
 
-def numero_letras(cadena):
-    cambio = cadena.replace(" ","")
-    count=0
-    for i in range(0,len(cambio)):
-        count+=1
-        print(count,i)
-    return count
-# print(numero_letras("Hola Mundo"))
 
+def numero_letras(cadena):
+    cambio = cadena.replace(" ", "")
+    count = 0
+    for i in range(0, len(cambio)):
+        count += 1
+        print(count, i)
+    return count
+
+
+# print(numero_letras("Hola Mundo"))
