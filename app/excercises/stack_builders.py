@@ -659,7 +659,7 @@ def encontrar_incide(palabra, target):
     return -1
 
 
-# print(encontrar_incide("python","t"))
+print(encontrar_incide("python","t"))
 
 # 32. Sumar los números en un rango
 
