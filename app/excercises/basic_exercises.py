@@ -259,7 +259,7 @@ def aLista(cadena):
     return lista
 
 
-# print(aLista("1,2,3,9,5"))
+print(aLista("1,2,3,9,5"))
 
 
 # Subcadena más larga sin caracteres repetidos
