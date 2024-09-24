@@ -230,7 +230,7 @@ def fizzbuzz(num):
             print(i)
 
 
-# print(fizzbuzz(15))
+print(fizzbuzz(15))
 
 
 def inversa_arrglo(arreglo):
