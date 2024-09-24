@@ -244,7 +244,7 @@ def inversa_arrglo(arreglo):
     return arreglo
 
 
-print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
+# print(inversa_arrglo([1, 3, 5, 7, 8, 3]))
 
 # convertir cadena de numeros a list
 
