@@ -216,7 +216,8 @@ def palindromo(frase):
     else:
         return False
 
-print(palindromo('radar'))
+
+# print(palindromo('radar'))
 
 # Inversa de un arreglo
 
