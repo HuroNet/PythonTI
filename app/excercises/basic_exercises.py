@@ -276,7 +276,7 @@ def subcadena(cadena):
     return longitud
 
 
-print(subcadena("abcabca"))
+# print(subcadena("abcabca"))
 
 
 # Escribe una función en Python que invierta una cadena dada.
