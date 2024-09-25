@@ -739,5 +739,3 @@ def fibonacci_sequence(n):
 n = 10
 # # print(fibonacci_sequence(n))
 # Generar un Triángulo de Pascal
-
-
