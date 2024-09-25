@@ -741,23 +741,3 @@ n = 10
 # Generar un Triángulo de Pascal
 
 
-# Escribe una función que genere un triángulo
-# de Pascal de altura n.
-def generar_triangulo_de_pascual(n):
-    triangulo = []
-
-    for i in range(n):
-        fila = [1] * (i + 1)
-        for j in range(1, i):
-            fila[j] = triangulo[i - 1][j - 1] + triangulo[i - 1][j]
-        triangulo.append(fila)
-
-    return triangulo
-
-
-# Ejemplo de uso:
-altura = 5
-triangulo_de_pascual = generar_triangulo_de_pascual(altura)
-
-for fila in triangulo_de_pascual:
-    print(fila)
