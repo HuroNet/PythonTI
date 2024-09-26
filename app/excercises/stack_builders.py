@@ -620,7 +620,7 @@ def delete_no_alfabeticos(string):
     return new_string
 
 
-print(delete_no_alfabeticos("H0la, Mundo!"))
+# print(delete_no_alfabeticos("H0la, Mundo!"))
 
 
 def no_alph_join(string):
