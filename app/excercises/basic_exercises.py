@@ -733,9 +733,3 @@ def fibonacci_sequence(n):
         next_number = sequence[-1] + sequence[-2]
         sequence.append(next_number)
     return sequence
-
-
-# Ejemplo de uso
-n = 10
-# # print(fibonacci_sequence(n))
-# Generar un Triángulo de Pascal
