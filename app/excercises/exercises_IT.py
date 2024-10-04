@@ -32,4 +32,6 @@ def palindromo(palabra):
         return False
    
 
-print(palindromo("Anita lava la tina"))
+# print(palindromo("Anita lava la tina"))
+
+
