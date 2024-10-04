@@ -687,4 +687,4 @@ def numero_letras(cadena):
     return count
 
 
-# print(numero_letras("Hola Mundo"))
+print(numero_letras("Hola Mundo"))
