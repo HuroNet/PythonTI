@@ -16,3 +16,20 @@ def invertir_palabras(palabras):
 
 
 # print(invertir_palabras("Hola Mundo"))
+
+# Palindromo
+# Enunciado: Verifica si una cadena es la misma al
+#  leerla al derecho y al revés, ignorando espacios y mayúsculas.
+# Ejemplo: Entrada: "Anita lava la tina" -> Salida: True
+
+def palindromo(palabra):
+    inversa= invertir_palabras(palabra).lower().replace(" ","")
+    palabra=palabra.replace(" ","").lower()
+    print(inversa, palabra)
+    if inversa == palabra:
+        return True
+    else:
+        return False
+   
+
+print(palindromo("Anita lava la tina"))
