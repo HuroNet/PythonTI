@@ -35,3 +35,15 @@ def palindromo(palabra):
 # print(palindromo("Anita lava la tina"))
 
 
+
+# Eliminar caracteres duplicados consecutivos.
+#     Enunciado: Dada una cadena, elimina todos
+#  los caracteres duplicados consecutivos.
+#     Ejemplo: Entrada: "aabbccdde" -> Salida: "abcde"
+def eliminar_duplicados(string):
+    caracteres=""
+
+    return caracteres
+
+
+print(eliminar_duplicados("aabbccdde"))
