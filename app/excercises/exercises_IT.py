@@ -41,8 +41,10 @@ def palindromo(palabra):
 #  los caracteres duplicados consecutivos.
 #     Ejemplo: Entrada: "aabbccdde" -> Salida: "abcde"
 def eliminar_duplicados(string):
-    caracteres=""
-
+    caracteres=[]
+    for dato in string:
+        if dato not in caracteres:
+            caracteres.append(dato)
     return caracteres
 
 
