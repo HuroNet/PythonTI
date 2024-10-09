@@ -47,4 +47,15 @@ def eliminar_duplicados(string):
             caracteres.append(valor)
 
     return "".join(caracteres)
-print(eliminar_duplicados("aabbccdde"))
+# print(eliminar_duplicados("aabbccdde"))
+
+def eliminar_duplicados_indices(string):
+    caracteres=string[0]
+    tam=len(string)
+    for valor in range(1,tam):
+        if valor != string[valor-1]:
+            caracteres.append(valor)
+        
+    return 0
+
+print(eliminar_duplicados_indices("aabbccdde"))
