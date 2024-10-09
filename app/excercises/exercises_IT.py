@@ -58,4 +58,10 @@ def eliminar_duplicados_indices(string):
         
     return "".join(caracteres)
 
-print(eliminar_duplicados_indices("aabbccdde"))
+# print(eliminar_duplicados_indices("aabbccdde"))
+
+def eliminar_dup_mi_indices(cadena):
+    
+    return 0
+
+print(eliminar_dup_mi_indices("aabbccdde"))
