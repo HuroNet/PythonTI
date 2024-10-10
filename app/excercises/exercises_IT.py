@@ -61,7 +61,7 @@ def eliminar_duplicados_indices(string):
 # print(eliminar_duplicados_indices("aabbccdde"))
 
 def eliminar_dup_mi_indices(cadena):
-    
+    hola
     return 0
 
 print(eliminar_dup_mi_indices("aabbccdde"))
