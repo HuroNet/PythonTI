@@ -51,7 +51,6 @@ def eliminar_duplicados(string):
 
 def eliminar_duplicados_indices(string):
     caracteres=[string[0]]
-    tam=len(string)
     for valor in string[1:]:
         if valor != caracteres[-1]:
             caracteres.append(valor)
@@ -61,7 +60,7 @@ def eliminar_duplicados_indices(string):
 # print(eliminar_duplicados_indices("aabbccdde"))
 
 def eliminar_dup_mi_indices(cadena):
-    hola
+
     return 0
 
 print(eliminar_dup_mi_indices("aabbccdde"))
