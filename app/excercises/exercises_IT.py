@@ -87,7 +87,13 @@ def count_vowels_consonats(string):
 
 # print(count_vowels_consonats("Hola"))
 
-Reemplazar un carácter específico en una cadena.
+# Reemplazar un carácter específico en una cadena.
 
-    Enunciado: Dada una cadena y un carácter, reemplaza todas las apariciones del carácter por un símbolo #.
-    Ejemplo: Entrada: "banana", "a" -> Salida: "b#n#n#"
+#     Enunciado: Dada una cadena y un carácter,
+#  reemplaza todas las apariciones del carácter por un símbolo #.
+#     Ejemplo: Entrada: "banana", "a" -> Salida: "b#n#n#"
+
+def remplace_char(character,dato):
+    character=character.replace("a",dato)
+    return character
+print(remplace_char("banana","#"))
