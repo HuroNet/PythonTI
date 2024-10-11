@@ -96,4 +96,4 @@ def count_vowels_consonats(string):
 def remplace_char(character,dato):
     character=character.replace("a",dato)
     return character
-print(remplace_char("banana","#"))
+# print(remplace_char("banana","#"))
