@@ -66,4 +66,28 @@ def eliminar_dup_mi_indices(cadena):
             caracteres += cadena[i]
     return caracteres
 
-print(eliminar_dup_mi_indices("aabbccdde"))
+# print(eliminar_dup_mi_indices("aabbccdde"))
+
+# Contar vocales y consonantes en una cadena.
+
+#     Enunciado: Dada una cadena, cuenta cuántas
+#  vocales y cuántas consonantes contiene.
+#     Ejemplo: Entrada: "Hola" -> 
+# Salida: Vocales: 2, Consonantes: 2
+
+def count_vowels_consonats(string):
+    vowels_dict=["a","e","i","o","u"]
+    diccionario={"vowels":0,"consonants":0}
+    for valor in string:
+        if valor in vowels_dict:
+            diccionario["vowels"]+=1
+        else:
+            diccionario["consonants"]+=1
+    return diccionario
+
+# print(count_vowels_consonats("Hola"))
+
+Reemplazar un carácter específico en una cadena.
+
+    Enunciado: Dada una cadena y un carácter, reemplaza todas las apariciones del carácter por un símbolo #.
+    Ejemplo: Entrada: "banana", "a" -> Salida: "b#n#n#"
