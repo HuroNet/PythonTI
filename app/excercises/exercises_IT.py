@@ -60,7 +60,10 @@ def eliminar_duplicados_indices(string):
 # print(eliminar_duplicados_indices("aabbccdde"))
 
 def eliminar_dup_mi_indices(cadena):
-
-    return 0
+    caracteres=cadena[0]
+    for i in range(1,len(cadena)):
+        if cadena[i] not in caracteres:
+            caracteres += cadena[i]
+    return caracteres
 
 print(eliminar_dup_mi_indices("aabbccdde"))
