@@ -115,17 +115,36 @@ def remplace_char(character, dato):
 #  en una cadena que no se repita.
 #     Ejemplo: Entrada: "abacabad" -> Salida: "c"
 
+
 def caracter_no_repeditodo(cadena):
-    palabras={}
+    palabras = {}
     for dato in cadena:
         if dato in palabras:
             palabras[dato] += 1
         else:
             palabras[dato] = 1
     for dato in cadena:
-        if palabras[dato]==1:
+        if palabras[dato] == 1:
             return dato
 
     return "no existe"
 
-print(caracter_no_repeditodo("abacabad"))
+
+# print(caracter_no_repeditodo("abacabad"))
+
+# Convertir una cadena a camelCase.
+
+
+#     Enunciado: Convierte una cadena con
+#  palabras separadas por espacios o guiones
+#  bajos a formato camelCase.
+#     Ejemplo: Entrada:
+#  "mi_nombre_es_carlos" -> Salida: "miNombreEsCarlos"
+def change_capital_letter(string):
+    palabras = string.replace("_", " ").split()
+    camel_case = palabras[0].lower()
+    for palabra in palabras[1:]:
+        camel_case += palabra.capitalize()
+
+    return camel_case
+# print(change_capital_letter("mi_nombre_es_carlos"))
