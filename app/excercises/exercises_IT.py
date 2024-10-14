@@ -183,3 +183,25 @@ def spand_compressed_string(string):
 
 
 # print(spand_compressed_string("a2b3c1"))
+
+# Contar la frecuencia de cada palabra en una oración.
+
+#     Enunciado: Dada una oración,
+# cuenta cuántas veces aparece cada palabra.
+#     Ejemplo: Entrada: "el gato y el perro"
+# -> Salida: {"el": 2, "gato": 1, "y": 1, "perro": 1}
+
+
+def frecuencia_palabra(palabras):
+    palabras = palabras.split()
+    diccionartio_palabras = {}
+    for palabra in palabras:
+        if palabra in diccionartio_palabras:
+            diccionartio_palabras[palabra] += 1
+        else:
+            diccionartio_palabras[palabra] = 1
+
+    return diccionartio_palabras
+
+
+print(frecuencia_palabra("el gato y el perro"))
