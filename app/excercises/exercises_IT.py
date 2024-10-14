@@ -147,6 +147,4 @@ def change_capital_letter(string):
         camel_case += palabra.capitalize()
 
     return camel_case
-
-
 # print(change_capital_letter("mi_nombre_es_carlos"))
