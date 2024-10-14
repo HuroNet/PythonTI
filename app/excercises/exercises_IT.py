@@ -204,4 +204,12 @@ def frecuencia_palabra(palabras):
     return diccionartio_palabras
 
 
-print(frecuencia_palabra("el gato y el perro"))
+# print(frecuencia_palabra("el gato y el perro"))
+
+from collections import Counter
+
+def frecuencia__palabras(palabras):
+
+    return dict(Counter(palabras.split()))
+
+# print(frecuencia__palabras("el gato y el perro"))
