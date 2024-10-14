@@ -171,13 +171,15 @@ def spand_compressed_string(string):
         while i < len(string):
             if string[i].isdigit():
                 numero += string[i]
+                print(numero)
                 i += 1
 
             else:
                 break
 
         resultado += char * int(numero)
+        print(char + numero)
     return resultado
 
 
-print(spand_compressed_string("a2b3c1"))
+# print(spand_compressed_string("a2b3c1"))
