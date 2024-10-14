@@ -134,8 +134,19 @@ def caracter_no_repeditodo(cadena):
 
 # Convertir una cadena a camelCase.
 
+
 #     Enunciado: Convierte una cadena con
 #  palabras separadas por espacios o guiones
 #  bajos a formato camelCase.
 #     Ejemplo: Entrada:
 #  "mi_nombre_es_carlos" -> Salida: "miNombreEsCarlos"
+def change_capital_letter(string):
+    palabras = string.replace("_", " ").split()
+    camel_case = palabras[0].lower()
+    for palabra in palabras[1:]:
+        camel_case += palabra.capitalize()
+
+    return camel_case
+
+
+# print(change_capital_letter("mi_nombre_es_carlos"))
