@@ -148,3 +148,8 @@ def change_capital_letter(string):
 
     return camel_case
 # print(change_capital_letter("mi_nombre_es_carlos"))
+
+# Expandir una cadena comprimida.
+
+#     Enunciado: Dada una cadena comprimida en la forma a2b3c1, expándela a su forma original.
+#     Ejemplo: Entrada: "a2b3c1" -> Salida: "aabbbcc"
