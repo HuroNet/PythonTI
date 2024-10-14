@@ -147,4 +147,69 @@ def change_capital_letter(string):
         camel_case += palabra.capitalize()
 
     return camel_case
+
+
 # print(change_capital_letter("mi_nombre_es_carlos"))
+
+# Expandir una cadena comprimida.
+
+#     Enunciado: Dada una cadena comprimida en la
+#  forma a2b3c1, expándela a su forma original.
+#     Ejemplo: Entrada: "a2b3c1" -> Salida: "aabbbcc"
+
+
+def spand_compressed_string(string):
+    resultado = ""
+    i = 0
+
+    while i < len(string):
+        char = string[i]
+        i += 1
+
+        numero = ""
+
+        while i < len(string):
+            if string[i].isdigit():
+                numero += string[i]
+                print(numero)
+                i += 1
+
+            else:
+                break
+
+        resultado += char * int(numero)
+        print(char + numero)
+    return resultado
+
+
+# print(spand_compressed_string("a2b3c1"))
+
+# Contar la frecuencia de cada palabra en una oración.
+
+#     Enunciado: Dada una oración,
+# cuenta cuántas veces aparece cada palabra.
+#     Ejemplo: Entrada: "el gato y el perro"
+# -> Salida: {"el": 2, "gato": 1, "y": 1, "perro": 1}
+
+
+def frecuencia_palabra(palabras):
+    palabras = palabras.split()
+    diccionartio_palabras = {}
+    for palabra in palabras:
+        if palabra in diccionartio_palabras:
+            diccionartio_palabras[palabra] += 1
+        else:
+            diccionartio_palabras[palabra] = 1
+
+    return diccionartio_palabras
+
+
+# print(frecuencia_palabra("el gato y el perro"))
+
+from collections import Counter
+
+def frecuencia__palabras(palabras):
+
+    return dict(Counter(palabras.split()))
+
+# print(frecuencia__palabras("el gato y el perro"))
