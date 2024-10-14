@@ -156,3 +156,28 @@ def change_capital_letter(string):
 #     Enunciado: Dada una cadena comprimida en la
 #  forma a2b3c1, expándela a su forma original.
 #     Ejemplo: Entrada: "a2b3c1" -> Salida: "aabbbcc"
+
+
+def spand_compressed_string(string):
+    resultado = ""
+    i = 0
+
+    while i < len(string):
+        char = string[i]
+        i += 1
+
+        numero = ""
+
+        while i < len(string):
+            if string[i].isdigit():
+                numero += string[i]
+                i += 1
+
+            else:
+                break
+
+        resultado += char * int(numero)
+    return resultado
+
+
+print(spand_compressed_string("a2b3c1"))
