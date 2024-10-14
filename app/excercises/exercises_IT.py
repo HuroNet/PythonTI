@@ -108,3 +108,24 @@ def remplace_char(character, dato):
 
 
 # print(remplace_char("banana","#"))
+
+# Buscar el primer carácter no repetido en una cadena.
+
+#     Enunciado: Encuentra el primer carácter
+#  en una cadena que no se repita.
+#     Ejemplo: Entrada: "abacabad" -> Salida: "c"
+
+def caracter_no_repeditodo(cadena):
+    palabras={}
+    for dato in cadena:
+        if dato in palabras:
+            palabras[dato] += 1
+        else:
+            palabras[dato] = 1
+    for dato in cadena:
+        if palabras[dato]==1:
+            return dato
+
+    return "no existe"
+
+print(caracter_no_repeditodo("abacabad"))
