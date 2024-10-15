@@ -247,7 +247,11 @@ def invertir_lista(lista,objetivo):
 # print(invertir_lista([1,2,3,4,5],2))
 
 def invertir_2_ultimos(lista,objetivo):
-    return 0
+    for i in range(objetivo):
+        ultimo=lista.pop()
+        lista.insert(0,ultimo)
+    resultado=lista    
+    return resultado
 
 print(invertir_2_ultimos([1,2,3,4,5],2))
 
