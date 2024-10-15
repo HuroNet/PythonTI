@@ -316,14 +316,44 @@ def interseccion_lista(lista1, lista2):
 
 
 def aplanar_lista(lista):
-    new_lista=[]
+    new_lista = []
     # for i in range(len(lista)):
     #     for j in lista[i]:
     #         new_lista.append(j)
-    for dato in lista:
-        for subdato in dato:
-            new_lista.append(subdato)
+    # for dato in lista:
+    #     for subdato in dato:
+    #         new_lista.append(subdato)
+
+    for i in range(len(lista)):
+        for j in lista[i]:
+            new_lista = new_lista + [j]
 
     return new_lista
 
-print(aplanar_lista([[1, 2], [3, 4], [5]]))
+
+# print(aplanar_lista([[1, 2], [3, 4], [5]]))
+
+
+# Agrupar elementos en pares consecutivos.
+
+#     Enunciado: Dada una lista, agrupa sus elementos
+#  en pares consecutivos. Si la lista tiene un número
+# impar de elementos, el último elemento queda solo.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5]
+#  -> Salida: [(1, 2), (3, 4), (5,)]
+
+
+def agrupar_elementos(lista):
+    resultado = []
+
+    for i in range(0, len(lista), 2):
+        print(lista[i])
+        if i + 1 < len(lista):
+            resultado.append((lista[i], lista[i + 1])) # si se quiere en [] solo se pone y punto
+        else:
+            resultado.append((lista[i],))
+
+    return resultado
+
+
+print(agrupar_elementos([1, 2, 3, 4, 5]))
