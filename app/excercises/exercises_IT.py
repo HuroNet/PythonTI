@@ -290,4 +290,19 @@ def dividir_partes_iguales(lista, divisor):
     return partes
 
 
-print(dividir_partes_iguales([1, 2, 3, 4, 5, 6, 7, 8], 3))
+# print(dividir_partes_iguales([1, 2, 3, 4, 5, 6, 7, 8], 3))
+
+# Encontrar la intersección de dos listas.
+
+#     Enunciado: Dadas dos listas, encuentra los elementos comunes entre ambas.
+#     Ejemplo: Entrada: [1, 2, 3], [2, 3, 4] -> Salida: [2, 3]
+
+
+def interseccion_lista(lista1,lista2):
+    interseccion=[]
+    for dato in lista1:
+        if dato in lista2:
+            interseccion.append(dato)
+    return interseccion
+
+print(interseccion_lista([1,2,3],[2,3,4]))
