@@ -313,3 +313,17 @@ def interseccion_lista(lista1, lista2):
 
 #     Enunciado: Dada una lista que contiene otras listas, aplánala a una sola lista.
 #     Ejemplo: Entrada: [[1, 2], [3, 4], [5]] -> Salida: [1, 2, 3, 4, 5]
+
+
+def aplanar_lista(lista):
+    new_lista=[]
+    # for i in range(len(lista)):
+    #     for j in lista[i]:
+    #         new_lista.append(j)
+    for dato in lista:
+        for subdato in dato:
+            new_lista.append(subdato)
+
+    return new_lista
+
+print(aplanar_lista([[1, 2], [3, 4], [5]]))
