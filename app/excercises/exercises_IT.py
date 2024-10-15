@@ -270,3 +270,22 @@ def invertir_2_ultimos(lista, objetivo):
 #     dividir exactamente, la última parte debe ser más corta.
 #     Ejemplo: Entrada: [1, 2, 3, 4, 5, 6, 7, 8], 3 
 #     -> Salida: [[1, 2, 3], [4, 5, 6], [7, 8]]
+
+def dividir_partes_iguales(lista,divisor):
+    tam=len(lista)//divisor #parte entera
+    resto=len(lista) % divisor #modulo
+
+    partes=[]
+    indice=0
+
+    for i in range(divisor):
+        if i < resto:
+            partes.append(lista[indice:indice+tam+1])
+            indice += tam +1
+        else:
+            partes.append(lista[indice:indice+tam+1])
+            indice += tam 
+
+    return partes
+
+print(dividir_partes_iguales([1,2,3,4,5,6,7,8],3))
