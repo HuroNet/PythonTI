@@ -261,4 +261,99 @@ def invertir_2_ultimos(lista, objetivo):
     return resultado
 
 
-print(invertir_2_ultimos([1, 2, 3, 4, 5], 2))
+# print(invertir_2_ultimos([1, 2, 3, 4, 5], 2))
+
+# Dividir una lista en n partes iguales.
+
+#     Enunciado: Dada una lista, divídela
+#     en n partes iguales. Si no se puede
+#     dividir exactamente, la última parte debe ser más corta.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5, 6, 7, 8], 3
+#     -> Salida: [[1, 2, 3], [4, 5, 6], [7, 8]]
+
+
+def dividir_partes_iguales(lista, divisor):
+    tam = len(lista) // divisor  # parte entera
+    resto = len(lista) % divisor  # modulo
+
+    partes = []
+    indice = 0
+
+    for i in range(divisor):
+        if i < resto:
+            partes.append(lista[indice : indice + tam + 1])
+            indice += tam + 1
+        else:
+            partes.append(lista[indice : indice + tam + 1])
+            indice += tam
+
+    return partes
+
+
+# print(dividir_partes_iguales([1, 2, 3, 4, 5, 6, 7, 8], 3))
+
+# Encontrar la intersección de dos listas.
+
+#     Enunciado: Dadas dos listas, encuentra los elementos comunes entre ambas.
+#     Ejemplo: Entrada: [1, 2, 3], [2, 3, 4] -> Salida: [2, 3]
+
+
+def interseccion_lista(lista1, lista2):
+    interseccion = []
+    for dato in lista1:
+        if dato in lista2:
+            interseccion.append(dato)
+    return interseccion
+
+
+# print(interseccion_lista([1,2,3],[2,3,4]))
+
+
+# Aplanar una lista de listas.
+
+#     Enunciado: Dada una lista que contiene otras listas, aplánala a una sola lista.
+#     Ejemplo: Entrada: [[1, 2], [3, 4], [5]] -> Salida: [1, 2, 3, 4, 5]
+
+
+def aplanar_lista(lista):
+    new_lista = []
+    # for i in range(len(lista)):
+    #     for j in lista[i]:
+    #         new_lista.append(j)
+    # for dato in lista:
+    #     for subdato in dato:
+    #         new_lista.append(subdato)
+
+    for i in range(len(lista)):
+        for j in lista[i]:
+            new_lista = new_lista + [j]
+
+    return new_lista
+
+
+# print(aplanar_lista([[1, 2], [3, 4], [5]]))
+
+
+# Agrupar elementos en pares consecutivos.
+
+#     Enunciado: Dada una lista, agrupa sus elementos
+#  en pares consecutivos. Si la lista tiene un número
+# impar de elementos, el último elemento queda solo.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5]
+#  -> Salida: [(1, 2), (3, 4), (5,)]
+
+
+def agrupar_elementos(lista):
+    resultado = []
+
+    for i in range(0, len(lista), 2):
+        print(lista[i])
+        if i + 1 < len(lista):
+            resultado.append((lista[i], lista[i + 1])) # si se quiere en [] solo se pone y punto
+        else:
+            resultado.append((lista[i],))
+
+    return resultado
+
+
+print(agrupar_elementos([1, 2, 3, 4, 5]))
