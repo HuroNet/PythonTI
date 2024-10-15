@@ -249,7 +249,7 @@ def invertir_lista(lista,objetivo):
 def invertir_2_ultimos(lista,objetivo):
     for i in range(objetivo):
         ultimo=lista.pop()
-        lista.insert(0,ultimo)
+        lista.insert(0,ultimo) #insert no devuelve el nuevo estado de la lista
     resultado=lista    
     return resultado
 
