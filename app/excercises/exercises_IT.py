@@ -298,11 +298,18 @@ def dividir_partes_iguales(lista, divisor):
 #     Ejemplo: Entrada: [1, 2, 3], [2, 3, 4] -> Salida: [2, 3]
 
 
-def interseccion_lista(lista1,lista2):
-    interseccion=[]
+def interseccion_lista(lista1, lista2):
+    interseccion = []
     for dato in lista1:
         if dato in lista2:
             interseccion.append(dato)
     return interseccion
 
-print(interseccion_lista([1,2,3],[2,3,4]))
+
+# print(interseccion_lista([1,2,3],[2,3,4]))
+
+
+# Aplanar una lista de listas.
+
+#     Enunciado: Dada una lista que contiene otras listas, aplánala a una sola lista.
+#     Ejemplo: Entrada: [[1, 2], [3, 4], [5]] -> Salida: [1, 2, 3, 4, 5]
