@@ -213,3 +213,41 @@ def frecuencia__palabras(palabras):
     return dict(Counter(palabras.split()))
 
 # print(frecuencia__palabras("el gato y el perro"))
+
+# Eliminar duplicados de una lista sin usar set().
+
+#     Enunciado: Dada una lista, elimina los
+#  elementos duplicados manteniendo el orden de aparición.
+#     Ejemplo: Entrada: [1, 2, 2, 3, 4, 4] 
+# -> Salida: [1, 2, 3, 4]
+
+def delete_duplicados(lista):
+    result=[]
+    for valor in lista:
+        if valor not in result:
+            result.append(valor) 
+    return result
+
+# print(delete_duplicados([1,2,2,3,4,4]))
+
+# Rotar una lista hacia la derecha.
+
+#     Enunciado: Dada una lista, rota sus
+# elementos k posiciones hacia la derecha.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2 
+# -> Salida: [4, 5, 1, 2, 3]
+
+def invertir_lista(lista,objetivo):
+    if (len(lista)<2):
+        return lista
+    dos_ultimos=lista[-objetivo:]
+    resultado=dos_ultimos+lista[:-objetivo]
+    return resultado
+
+# print(invertir_lista([1,2,3,4,5],2))
+
+def invertir_2_ultimos(lista,objetivo):
+    return 0
+
+print(invertir_2_ultimos([1,2,3,4,5],2))
+
