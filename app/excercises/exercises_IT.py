@@ -261,4 +261,12 @@ def invertir_2_ultimos(lista, objetivo):
     return resultado
 
 
-print(invertir_2_ultimos([1, 2, 3, 4, 5], 2))
+# print(invertir_2_ultimos([1, 2, 3, 4, 5], 2))
+
+# Dividir una lista en n partes iguales.
+
+#     Enunciado: Dada una lista, divídela 
+#     en n partes iguales. Si no se puede 
+#     dividir exactamente, la última parte debe ser más corta.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5, 6, 7, 8], 3 
+#     -> Salida: [[1, 2, 3], [4, 5, 6], [7, 8]]
