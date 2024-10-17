@@ -358,4 +358,11 @@ def agrupar_elementos(lista):
     return resultado
 
 
-print(agrupar_elementos([1, 2, 3, 4, 5]))
+# print(agrupar_elementos([1, 2, 3, 4, 5]))
+
+# Rotar una lista hacia la derecha.
+
+#     Enunciado: Dada una lista, rota sus 
+# elementos k posiciones hacia la derecha.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2 
+# -> Salida: [4, 5, 1, 2, 3]
