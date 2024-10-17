@@ -349,11 +349,31 @@ def agrupar_elementos(lista):
     for i in range(0, len(lista), 2):
         print(lista[i])
         if i + 1 < len(lista):
-            resultado.append((lista[i], lista[i + 1])) # si se quiere en [] solo se pone y punto
+            resultado.append(
+                (lista[i], lista[i + 1])
+            )  # si se quiere en [] solo se pone y punto
         else:
             resultado.append((lista[i],))
 
     return resultado
 
 
-print(agrupar_elementos([1, 2, 3, 4, 5]))
+# print(agrupar_elementos([1, 2, 3, 4, 5]))
+
+# Rotar una lista hacia la derecha.
+
+#     Enunciado: Dada una lista, rota sus
+# elementos k posiciones hacia la derecha.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2
+# -> Salida: [4, 5, 1, 2, 3]
+
+
+def rotar_lista_derecha(lista, rotar):
+    for i in range(rotar):
+        ultimo = lista.pop()
+        lista.insert(0, ultimo)
+
+    return lista
+
+
+print(rotar_lista_derecha([8, 2, 3, 4, 5], 2))
