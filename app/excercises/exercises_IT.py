@@ -376,4 +376,14 @@ def rotar_lista_derecha(lista, rotar):
     return lista
 
 
-print(rotar_lista_derecha([8, 2, 3, 4, 5], 2))
+# print(rotar_lista_derecha([8, 2, 3, 4, 5], 2))
+
+# elaborar con indices
+def rotar_con_indices(lista,rotar):
+    resultado=[]
+    for valor in lista[-2:]:
+        resultado = valor + resultado
+        print(valor)
+    return resultado 
+
+print(rotar_con_indices([1,2,3,4,5],2))
