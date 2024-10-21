@@ -90,3 +90,28 @@ def remplazar_caracter(string, caracter):
 
 
 # print(remplazar_caracter("banana","a"))
+
+
+# Buscar el primer carácter no repetido en una cadena.
+
+#     Enunciado: Encuentra el primer carácter en una cadena que no se repita.
+#     Ejemplo: Entrada: "abacabad" -> Salida: "c"
+
+def primer_no_repetido(cadena):
+
+    diccionario={}
+
+    for letra in cadena:
+        if letra in diccionario:
+            diccionario[letra]+=1
+        else:
+            diccionario[letra]=1
+    
+    for letra in diccionario:
+        if diccionario[letra]==1:
+            return letra
+        
+    return None
+
+
+print(primer_no_repetido("abacabad"))
