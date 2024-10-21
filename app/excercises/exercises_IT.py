@@ -385,4 +385,24 @@ def rotar_con_indices(lista,rotar):
         resultado[i]= lista[len(lista) - rotar+i]        
     return resultado 
 
-print(rotar_con_indices([1,2,3,4,5],2))
+# print(rotar_con_indices([1,2,3,4,5],2))
+
+# Ejercicios sin ayuda chat gpt
+
+# Invertir palabras en una oración sin invertir las letras de cada palabra.
+
+#     Enunciado: Dada una cadena de caracteres,
+#  invierte las palabras sin modificar el orden de las letras dentro de cada palabra.
+#     Ejemplo: Entrada: "Hola mundo" -> Salida: "mundo Hola"
+
+def invertir_palabras_2(string):
+    palabras=string.split()
+    # palabra=palabra[::-1]
+    # palabras=string[::-1]
+    invertida=[]
+    for palabra in palabras:
+        invertida.insert(0,palabra)
+
+    return " ".join(invertida)
+
+print(invertir_palabras_2("Hola mundo"))
