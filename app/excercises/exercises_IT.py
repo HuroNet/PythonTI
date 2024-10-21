@@ -382,8 +382,7 @@ def rotar_lista_derecha(lista, rotar):
 def rotar_con_indices(lista,rotar):
     resultado=[]* rotar
     for i in range(rotar):
-        print(i) local
-        
+        print(i) 
     return resultado 
 
 print(rotar_con_indices([1,2,3,4,5],2))
