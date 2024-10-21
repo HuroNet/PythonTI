@@ -1,14 +1,14 @@
-
 # Detectar si una cadena es un palíndromo.
 
-#     Enunciado: Verifica si una cadena es la misma 
+
+#     Enunciado: Verifica si una cadena es la misma
 # al leerla al derecho y al revés. Ignora espacios y mayúsculas.
 #     Ejemplo: Entrada: "Amo la paloma" -> Salida: True
 def palindromo(string):
-    original= string.lower().replace(" ","")
-    print("original",original)
-    invertida=string[::-1].lower().replace(" ","")
-    print("inver",invertida)
+    original = string.lower().replace(" ", "")
+    print("original", original)
+    invertida = string[::-1].lower().replace(" ", "")
+    print("inver", invertida)
 
     # for i in range(len(string)-1,-1,-1):
     #     invertida += string[i].lower().replace(" ","")
@@ -16,16 +16,17 @@ def palindromo(string):
         return True
     else:
         return False
-    
+
 
 # print(palindromo("Amo la paloma"))
 
 
 def invertir_cadena(cadena):
-    cadena_invertida=""
+    cadena_invertida = ""
     for valor in cadena:
         cadena_invertida = valor + cadena_invertida
     return cadena_invertida
+
 
 # print(invertir_cadena("hola mundo"))
 
@@ -35,13 +36,15 @@ def invertir_cadena(cadena):
 #  los caracteres duplicados consecutivos.
 #     Ejemplo: Entrada: "aabbccdde" -> Salida: "abcde"
 
+
 def eliminar_duplicados(caracteres):
-    cadena=""
+    cadena = ""
     for valor in caracteres:
         if valor not in cadena:
-            cadena+=valor
+            cadena += valor
 
     return cadena
+
 
 # print(eliminar_duplicados("aabbccdde"))
 
@@ -50,3 +53,40 @@ def eliminar_duplicados(caracteres):
 #     Enunciado: Dada una cadena, cuenta cuántas
 #  vocales y cuántas consonantes contiene.
 #     Ejemplo: Entrada: "Hola" -> Salida: Vocales: 2, Consonantes: 2
+
+
+def contar_vocales_consonantes(palabra):
+    vocales = {"a", "e", "i", "o", "u"}
+    conteo = {"vocales": 0, "consonantes": 0}
+    for letra in palabra:
+        if letra in vocales:
+            conteo["vocales"] += 1
+        else:
+            conteo["consonantes"] += 1
+    return conteo
+
+
+# print(contar_vocales_consonantes("carlitos"))
+
+# Reemplazar un carácter específico en una cadena.
+
+#     Enunciado: Dada una cadena y un carácter, reemplaza
+#     todas las apariciones del carácter por un símbolo #.
+#     Ejemplo: Entrada: "banana", "a" -> Salida: "b#n#n#"
+
+
+def remplazar_caracter(string, caracter):
+    # palabra=string.replace(caracter,"#")
+    palabra = []
+    for letra in string:
+        if letra == caracter:
+            # palabra.append("#")
+            palabra += "#"
+        else:
+            # palabra.append(letra)
+            palabra += letra
+
+    return "".join(palabra)
+
+
+# print(remplazar_caracter("banana","a"))
