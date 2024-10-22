@@ -114,4 +114,9 @@ def primer_no_repetido(cadena):
     return None
 
 
-print(primer_no_repetido("abacabad"))
+# print(primer_no_repetido("abacabad"))
+
+def invertir_cadena(cadena):
+    return 0
+
+print(invertir_cadena("hola mundo"))
