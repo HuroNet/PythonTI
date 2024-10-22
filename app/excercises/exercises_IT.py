@@ -127,3 +127,22 @@ def invertir_cadena(cadena):
 
 
 # print(invertir_cadena("hola mundo"))
+
+# Convertir una cadena a camelCase.
+
+#     Enunciado: Convierte una cadena con palabras
+# separadas por espacios o guiones bajos a formato camelCase.
+#     Ejemplo: Entrada: "mi_nombre_es_carlos" -> Salida: "miNombreEsCarlos"
+
+
+def cadena_camelCase(cadena):
+    cadena = cadena.replace("_", " ").split()
+    resultado = cadena[0].lower()
+    for i in range(1, len(cadena)):
+        letra_capital = cadena[i][0].upper() + cadena[i][1:].lower()
+        resultado += letra_capital
+
+    return "".join(resultado)
+
+
+print(cadena_camelCase("mi_nombre_es_carlos"))
