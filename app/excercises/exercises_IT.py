@@ -162,4 +162,4 @@ def expandir_cadena(cadena):
     
     return resultado
 
-print(expandir_cadena("a2b3c1"))
+# print(expandir_cadena("a2b3c1"))
