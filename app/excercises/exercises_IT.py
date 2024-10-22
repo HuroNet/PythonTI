@@ -97,26 +97,33 @@ def remplazar_caracter(string, caracter):
 #     Enunciado: Encuentra el primer carácter en una cadena que no se repita.
 #     Ejemplo: Entrada: "abacabad" -> Salida: "c"
 
+
 def primer_no_repetido(cadena):
 
-    diccionario={}
+    diccionario = {}
 
     for letra in cadena:
         if letra in diccionario:
-            diccionario[letra]+=1
+            diccionario[letra] += 1
         else:
-            diccionario[letra]=1
-    
+            diccionario[letra] = 1
+
     for letra in diccionario:
-        if diccionario[letra]==1:
+        if diccionario[letra] == 1:
             return letra
-        
+
     return None
 
 
 # print(primer_no_repetido("abacabad"))
 
-def invertir_cadena(cadena):
-    return 0
 
-print(invertir_cadena("hola mundo"))
+def invertir_cadena(cadena):
+    palabras = cadena.split()
+    inversa = []
+    for palabra in palabras:
+        inversa.insert(0, palabra)
+    return " ".join(inversa)
+
+
+# print(invertir_cadena("hola mundo"))
