@@ -145,4 +145,21 @@ def cadena_camelCase(cadena):
     return "".join(resultado)
 
 
-print(cadena_camelCase("mi_nombre_es_carlos"))
+# print(cadena_camelCase("mi_nombre_es_carlos"))
+
+# Expandir una cadena comprimida.
+
+#     Enunciado: Dada una cadena comprimida
+#  en la forma a2b3c1, expándela a su forma original.
+#     Ejemplo: Entrada: "a2b3c1" -> Salida: "aabbbcc"
+
+def expandir_cadena(cadena):
+    resultado=""
+    for i in range(0,len(cadena),2):
+        caracter= cadena[i]
+        numero=int(cadena[i+1])
+        resultado+=caracter*numero
+    
+    return resultado
+
+print(expandir_cadena("a2b3c1"))
