@@ -163,3 +163,18 @@ def expandir_cadena(cadena):
     return resultado
 
 # print(expandir_cadena("a2b3c1"))
+
+# Rotar una lista hacia la derecha.
+
+#     Enunciado: Dada una lista, rota sus 
+#     elementos k posiciones hacia la derecha.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2 -> 
+#     Salida: [4, 5, 1, 2, 3]
+
+def rotar_derecha(lista,numero):
+    resultado = []
+   
+
+    return 0
+
+print(rotar_derecha([1,2,3,4,5],2))
