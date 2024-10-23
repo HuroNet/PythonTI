@@ -127,3 +127,54 @@ def invertir_cadena(cadena):
 
 
 # print(invertir_cadena("hola mundo"))
+
+# Convertir una cadena a camelCase.
+
+#     Enunciado: Convierte una cadena con palabras
+# separadas por espacios o guiones bajos a formato camelCase.
+#     Ejemplo: Entrada: "mi_nombre_es_carlos" -> Salida: "miNombreEsCarlos"
+
+
+def cadena_camelCase(cadena):
+    cadena = cadena.replace("_", " ").split()
+    resultado = cadena[0].lower()
+    for i in range(1, len(cadena)):
+        letra_capital = cadena[i][0].upper() + cadena[i][1:].lower()
+        resultado += letra_capital
+
+    return "".join(resultado)
+
+
+# print(cadena_camelCase("mi_nombre_es_carlos"))
+
+# Expandir una cadena comprimida.
+
+#     Enunciado: Dada una cadena comprimida
+#  en la forma a2b3c1, expándela a su forma original.
+#     Ejemplo: Entrada: "a2b3c1" -> Salida: "aabbbcc"
+
+def expandir_cadena(cadena):
+    resultado=""
+    for i in range(0,len(cadena),2):
+        caracter= cadena[i]
+        numero=int(cadena[i+1])
+        resultado+=caracter*numero
+    
+    return resultado
+
+# print(expandir_cadena("a2b3c1"))
+
+# Rotar una lista hacia la derecha.
+
+#     Enunciado: Dada una lista, rota sus 
+#     elementos k posiciones hacia la derecha.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2 -> 
+#     Salida: [4, 5, 1, 2, 3]
+
+def rotar_derecha(lista,numero):
+    resultado = []
+   
+
+    return 0
+
+print(rotar_derecha([1,2,3,4,5],2))
