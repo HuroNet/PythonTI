@@ -173,7 +173,10 @@ def expandir_cadena(cadena):
 
 def rotar_derecha(lista,numero):
     resultado = []
-    resultado = lista[-numero:] + lista[:-numero]    
+    # resultado = lista[-numero:] + lista[:-numero] 
+    longitud=len(lista)
+    numero = numero % longitud
+    print(numero)   
    
 
     return resultado
