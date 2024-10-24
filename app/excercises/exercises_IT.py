@@ -199,7 +199,7 @@ def dividir_lista(lista,target):
     tam_parte = len(lista) // target
     print(tam_parte)
     resto=len(lista)%target
-    print("rest",resto)
+    print("rest",resto)   
 
     resultado=[]
     inicio=0
@@ -207,12 +207,10 @@ def dividir_lista(lista,target):
         if resto > 0:
             fin = inicio + tam_parte + 1
             resto -= 1
-            print("fin",fin)
         else:
             fin = inicio + tam_parte
-            print("else",fin )
-        print(lista[inicio:fin])
+        resultado.append[inicio:fin]
         inicio=fin
     return resultado
 
-print(dividir_lista([1, 2, 3, 4, 5, 6, 7, 8],3))
+# print(dividir_lista([1, 2, 3, 4, 5, 6, 7, 8],3))
