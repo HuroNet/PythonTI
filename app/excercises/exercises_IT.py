@@ -153,32 +153,38 @@ def cadena_camelCase(cadena):
 #  en la forma a2b3c1, expándela a su forma original.
 #     Ejemplo: Entrada: "a2b3c1" -> Salida: "aabbbcc"
 
+
 def expandir_cadena(cadena):
-    resultado=""
-    for i in range(0,len(cadena),2):
-        caracter= cadena[i]
-        numero=int(cadena[i+1])
-        resultado+=caracter*numero
-    
+    resultado = ""
+    for i in range(0, len(cadena), 2):
+        caracter = cadena[i]
+        numero = int(cadena[i + 1])
+        resultado += caracter * numero
+
     return resultado
+
 
 # print(expandir_cadena("a2b3c1"))
 
 # Rotar una lista hacia la derecha.
 
-#     Enunciado: Dada una lista, rota sus 
+#     Enunciado: Dada una lista, rota sus
 #     elementos k posiciones hacia la derecha.
-#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2 -> 
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5], 2 ->
 #     Salida: [4, 5, 1, 2, 3]
 
-def rotar_derecha(lista,numero):
+
+def rotar_derecha(lista, numero):
     resultado = []
-    # resultado = lista[-numero:] + lista[:-numero] 
-    longitud=len(lista)
-    numero = numero % longitud
-    print(numero)   
-   
+    # resultado = lista[-numero:] + lista[:-numero]
+    longitud = len(lista)
+
+    for i in range(longitud - numero, longitud):
+        resultado.append(lista[i])
+    for i in range(longitud - numero):
+        resultado.append(lista[i])
 
     return resultado
 
-print(rotar_derecha([1,2,3,4,5],2))
+
+print(rotar_derecha([1, 2, 3, 4, 5], 2))
