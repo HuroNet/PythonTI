@@ -224,9 +224,11 @@ def dividir_lista(lista,target):
 def agrupar_elementos(lista):
     result=[]
     for i in range(0,len(lista),2):
-        print(i)
-        result 
+        if i + 1 < len(lista):
+            result.append((lista[i],lista[i+1]))
 
-    return 0
+         
+
+    return result
 
 print(agrupar_elementos([1,2,3,4,5]))
