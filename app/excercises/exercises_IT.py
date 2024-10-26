@@ -220,3 +220,8 @@ def dividir_lista(lista,target):
 #     Enunciado: Dada una lista, agrupa sus elementos en pares
 #  consecutivos. Si la lista tiene un número impar de elementos, el último elemento queda solo.
 #     Ejemplo: Entrada: [1, 2, 3, 4, 5] -> Salida: [(1, 2), (3, 4), (5,)]
+
+def agrupar_elementos(lista):
+    return 0
+
+print(agrupar_elementos([1,2,3,4,5]))
