@@ -222,6 +222,11 @@ def dividir_lista(lista,target):
 #     Ejemplo: Entrada: [1, 2, 3, 4, 5] -> Salida: [(1, 2), (3, 4), (5,)]
 
 def agrupar_elementos(lista):
+    result=[]
+    for i in range(0,len(lista),2):
+        print(i)
+        result 
+
     return 0
 
 print(agrupar_elementos([1,2,3,4,5]))
