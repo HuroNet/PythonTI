@@ -187,4 +187,52 @@ def rotar_derecha(lista, numero):
     return resultado
 
 
-print(rotar_derecha([1, 2, 3, 4, 5], 2))
+# print(rotar_derecha([1, 2, 3, 4, 5], 2))
+
+# Dividir una lista en n partes iguales.
+
+#     Enunciado: Dada una lista, divídela en n partes iguales.
+#     Si no se puede dividir exactamente, la última parte debe ser más corta.
+# Ejemplo: Entrada: [1, 2, 3, 4, 5, 6, 7, 8], 3 -> Salida: [[1, 2, 3], [4, 5, 6], [7, 8]]
+
+
+def dividir_lista(lista, target):
+    tam_parte = len(lista) // target
+    print(tam_parte)
+    resto = len(lista) % target
+    print("rest", resto)
+
+    resultado = []
+    inicio = 0
+    for i in range(target):
+        if resto > 0:
+            fin = inicio + tam_parte + 1
+            resto -= 1
+        else:
+            fin = inicio + tam_parte
+        resultado.append[inicio:fin]
+        inicio = fin
+    return resultado
+
+
+# print(dividir_lista([1, 2, 3, 4, 5, 6, 7, 8],3))
+
+# Agrupar elementos en pares consecutivos.
+
+#     Enunciado: Dada una lista, agrupa sus elementos en pares
+#  consecutivos. Si la lista tiene un número impar de elementos, el último elemento queda solo.
+#     Ejemplo: Entrada: [1, 2, 3, 4, 5] -> Salida: [(1, 2), (3, 4), (5,)]
+
+
+def agrupar_elementos(lista):
+    result = []
+    for i in range(0, len(lista), 2):
+        if i + 1 < len(lista):
+            result.append((lista[i], lista[i + 1]))
+        else:
+            result.append((lista[i],))
+
+    return result
+
+
+print(agrupar_elementos([1, 2, 3, 4, 5]))
