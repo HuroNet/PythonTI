@@ -226,6 +226,8 @@ def agrupar_elementos(lista):
     for i in range(0,len(lista),2):
         if i + 1 < len(lista):
             result.append((lista[i],lista[i+1]))
+        else:
+            result.append((lista[i],))
 
          
 
