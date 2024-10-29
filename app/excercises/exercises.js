@@ -54,11 +54,13 @@ function studentMsg(totalScores, studentScore) {
     const grade = getGrade(studentScore);
     const passed = hasPassingGrade(studentScore);
 
-    return `Class average: ${average}. Your grade: ${grade}. You ${passed ? "passed" : "failed"} the course.`;
-    
+    if (passed === false){
+       return  `Class average: ${average}. Your grade: ${grade}. You failed the course.`;
+    }
 
-    
-
+    else{
+        return `Class average: ${average}. Your grade: ${grade}. You passed the course.`;
+    }
 
 }
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
