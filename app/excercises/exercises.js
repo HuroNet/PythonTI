@@ -47,30 +47,30 @@ function hasPassingGrade(score) {
 // console.log(hasPassingGrade(53));
 // console.log(hasPassingGrade(87));
 
-
 function studentMsg(totalScores, studentScore) {
-    
-    const average = getAverage(totalScores);
-    const grade = getGrade(studentScore);
-    const passed = hasPassingGrade(studentScore);
+  const average = getAverage(totalScores);
+  const grade = getGrade(studentScore);
+  const passed = hasPassingGrade(studentScore);
 
-    if (passed === false){
-       return  `Class average: ${average}. Your grade: ${grade}. You failed the course.`;
-    }
-
-    else{
-        return `Class average: ${average}. Your grade: ${grade}. You passed the course.`;
-    }
-
+  if (passed === false) {
+    return `Class average: ${average}. Your grade: ${grade}. You failed the course.`;
+  } else {
+    return `Class average: ${average}. Your grade: ${grade}. You passed the course.`;
+  }
 }
 // console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89,667], 37));
 
-const palindromo = (string) =>{
-  let original = string.toLowerCase().replace(" ","");
+const palindromo = (string) => {
+  let original = string.toLowerCase().replace(/[^a-z0-9]/g, "");
+  let invertida = original.split("").reverse().join("");
+  if (original === invertida) {
+    return "palindromo";
+  } else {
+    return "negado";
+  }
 };
 
-console.log(palindromo("hola"))
+console.log(palindromo("hola"));
 
-
-console.log(palindromo("AmoLaPAl oma"))
-console.log(palindromo("amolapaloma"))
+console.log(palindromo("AmoLaPAl oma"));
+console.log(palindromo("amolapaloma"));
