@@ -494,7 +494,7 @@ const longitudMasLarga = (array) =>{
 } 
 
 // console.log(longitudMasLarga(["perro", "gato", "elefante"]))
-
+// hola
 
 // Contar la frecuencia de cada elemento en un arreglo
 
