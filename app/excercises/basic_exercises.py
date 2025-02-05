@@ -182,7 +182,7 @@ def cadena_larga(cadena):
 
 # problema de entrevista---
 # devolver cuantas evces se repite
-text = "Hola mi nombre es Carlos, entonces yo decir Hola esta bien decir hola"
+text = "Hola mi nombre es s, entonces "
 
 
 def minusculas(text):
@@ -355,8 +355,6 @@ def numeros_duplicados(lista):
 # Escribe un programa en Python que lea un archivo de texto
 # y cuente la frecuencia de cada palabra.
 
-texto = "hOLA como estas esta carga la para carga de material y la TE"
-
 
 def frecuencia_palabra(texto):
     frecuencia = {}
@@ -386,14 +384,6 @@ def palindromo(palabra):
 
 
 # print(palindromo("reconocer"))
-
-
-# factorial un numero dado calcular de forma recursiva
-def factorial(numero):
-    facto = 1
-    for i in range(1, numero + 1):
-        facto = i * facto
-    return facto
 
 
 def factorial_recursivo(numero):
@@ -508,7 +498,7 @@ def invertir_oracion(oracion):
 
 
 # Escribe una función que tome una lista de números y
-# la ordene de menor a mayor sin usar la función sorted() de Python.
+# la ordene de menor a mayor sin usar la función
 def ordenar_lista(lista):
     n = len(lista)
     for i in range(n):
@@ -523,7 +513,7 @@ def ordenar_lista(lista):
 # # print(ordenar_lista([3,5,21,34,5,2,3,45,66]))
 # Escribe una función que cuente el número de veces
 # que cada palabra aparece en un texto.
-texto = "hOLA como estas esta carga la, para carga de material y la TE"
+texto = "hOLA como estas esta carga "
 
 
 def contar_palabra_text(texto):
@@ -707,7 +697,7 @@ lista2 = [3, 4, 4, 5, 6]
 # Número Perfecto
 
 # Escribe una función que determine si un
-# número es un número perfecto (la suma de sus divisores propios es igual al número).
+# número es un número perfecto (la suma de sus divi
 
 
 def es_numero_perfecto(n):
@@ -743,31 +733,3 @@ def fibonacci_sequence(n):
         next_number = sequence[-1] + sequence[-2]
         sequence.append(next_number)
     return sequence
-
-
-# Ejemplo de uso
-n = 10
-# # print(fibonacci_sequence(n))
-# Generar un Triángulo de Pascal
-
-
-# Escribe una función que genere un triángulo
-# de Pascal de altura n.
-def generar_triangulo_de_pascual(n):
-    triangulo = []
-
-    for i in range(n):
-        fila = [1] * (i + 1)
-        for j in range(1, i):
-            fila[j] = triangulo[i - 1][j - 1] + triangulo[i - 1][j]
-        triangulo.append(fila)
-
-    return triangulo
-
-
-# Ejemplo de uso:
-altura = 5
-triangulo_de_pascual = generar_triangulo_de_pascual(altura)
-
-for fila in triangulo_de_pascual:
-    print(fila)
