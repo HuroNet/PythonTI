@@ -72,3 +72,21 @@ const conteoDeNumeros=(array)=>{
 }
 
 // console.log(conteoDeNumeros([1,2,2,1,3,1,3,1]))
+
+//
+//ELiminar Duplicados
+// Entrada: [1, 2, 2, 3, 3, 4]
+// console.log(eliminar_duplicados([1, 2, 2, 3, 3, 4]))
+// Salida: [1, 2, 3, 4]
+ 
+const eliminarDuplicados = (array) =>{
+  const newList = []
+  array.forEach(element => {
+    newList.includes(element)?
+    null:
+    newList.push(element)
+  })
+  return newList
+}
+
+console.log(eliminarDuplicados([1, 2, 2, 3, 3, 4]))
