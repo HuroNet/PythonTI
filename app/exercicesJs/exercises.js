@@ -89,4 +89,15 @@ const eliminarDuplicados = (array) =>{
   return newList
 }
 
-console.log(eliminarDuplicados([1, 2, 2, 3, 3, 4]))
+// console.log(eliminarDuplicados([1, 2, 2, 3, 3, 4]))
+
+//invertir una cadena
+const invertirCadena2 = (cadena)=>{
+  return 0
+}
+
+console.log()
+
+// Entrada: "hola"
+// console.log(invertir_cadena("hola mundo"))
+// Salida: "aloh"
