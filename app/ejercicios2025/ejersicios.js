@@ -51,5 +51,17 @@ const factorial = (numero) => {
   // }
   // return total
 };
+// 🔹 5. FizzBuzz
 
-console.log(factorial(5));
+//     Input: n = 15
+
+//     Output: "FizzBuzz"
+
+//     Explicación: Si es múltiplo de 3 y 5, devuelve "FizzBuzz", si solo de 3 "Fizz", si solo de 5 "Buzz".
+
+const FizzBuzz = (numero) =>{
+  
+  return 0
+}
+
+console.log(FizzBuzz(15))
