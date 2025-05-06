@@ -59,9 +59,34 @@ const factorial = (numero) => {
 
 //     Explicación: Si es múltiplo de 3 y 5, devuelve "FizzBuzz", si solo de 3 "Fizz", si solo de 5 "Buzz".
 
-const FizzBuzz = (numero) =>{
-  
-  return 0
-}
+const FizzBuzz = (numero) => {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "FizzBuzz";
+  } else if (numero % 3 === 0) {
+    return "fizz";
+  } else if (numero % 5 === 0) {
+    return "buzz";
+  } else {
+    return numero;
+  }
+};
 
-console.log(FizzBuzz(15))
+// console.log(FizzBuzz(15))
+
+// 🔹 6. Número primo
+
+//     Input: n = 7
+
+//     Output: True
+
+//     Explicación: Verifica que solo tenga dos divisores: 1 y él mismo.
+const numerosPrimos = (numero) => {
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+console.log(numerosPrimos(7));
