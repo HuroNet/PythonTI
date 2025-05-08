@@ -135,9 +135,11 @@ const contarVocales = (string) => {
 
 const longitudPalabraLarga = (string) => {
   const array = string.split(" ");
-  let maxLongiitud = 0
-  for (let palabra of array){
-    console.log(palabra)
+  let maxLongiitud = 0;
+  for (let palabra of array) {
+    if (palabra.length > maxLongiitud) {
+      maxLongiitud = palabra.length;
+    }
   }
   return maxLongiitud;
 };
