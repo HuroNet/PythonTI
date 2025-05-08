@@ -89,4 +89,40 @@ const numerosPrimos = (numero) => {
   return true;
 };
 
-console.log(numerosPrimos(7));
+// 7. Revertir una cadena
+
+//     Input: "hola"
+
+//     Output: "aloh"
+
+//     Explicación: Usar slicing o un bucle para invertir la cadena.
+
+const revertirCadena = (cadena) => {
+  string = cadena.split("").reverse();
+  return string.join("");
+};
+
+// console.log(revertirCadena("carlitos"))
+
+// 8. Contar vocales
+
+// Input: "ingeniería"
+
+// Output: 6
+
+// Explicación: Recorrer la cadena y contar las letras a, e, i, o, u.
+
+const contarVocales = (string) => {
+  const vocales = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  const array = string.split("");
+  let result = 0;
+  for (let letra of array) {
+    if (vocales.includes(letra)) {
+      result += 1;
+    }
+  }
+
+  return result;
+};
+
+console.log(contarVocales("lo que no dije"));
