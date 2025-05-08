@@ -51,5 +51,78 @@ const factorial = (numero) => {
   // }
   // return total
 };
+// 🔹 5. FizzBuzz
 
-console.log(factorial(5));
+//     Input: n = 15
+
+//     Output: "FizzBuzz"
+
+//     Explicación: Si es múltiplo de 3 y 5, devuelve "FizzBuzz", si solo de 3 "Fizz", si solo de 5 "Buzz".
+
+const FizzBuzz = (numero) => {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "FizzBuzz";
+  } else if (numero % 3 === 0) {
+    return "fizz";
+  } else if (numero % 5 === 0) {
+    return "buzz";
+  } else {
+    return numero;
+  }
+};
+
+// console.log(FizzBuzz(15))
+
+// 🔹 6. Número primo
+
+//     Input: n = 7
+
+//     Output: True
+
+//     Explicación: Verifica que solo tenga dos divisores: 1 y él mismo.
+const numerosPrimos = (numero) => {
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+// 7. Revertir una cadena
+
+//     Input: "hola"
+
+//     Output: "aloh"
+
+//     Explicación: Usar slicing o un bucle para invertir la cadena.
+
+const revertirCadena = (cadena) => {
+  string = cadena.split("").reverse();
+  return string.join("");
+};
+
+// console.log(revertirCadena("carlitos"))
+
+// 8. Contar vocales
+
+// Input: "ingeniería"
+
+// Output: 6
+
+// Explicación: Recorrer la cadena y contar las letras a, e, i, o, u.
+
+const contarVocales = (string) => {
+  const vocales = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  const array = string.split("");
+  let result = 0;
+  for (let letra of array) {
+    if (vocales.includes(letra)) {
+      result += 1;
+    }
+  }
+
+  return result;
+};
+
+console.log(contarVocales("lo que no dije"));
