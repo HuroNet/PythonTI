@@ -125,4 +125,21 @@ const contarVocales = (string) => {
   return result;
 };
 
-console.log(contarVocales("lo que no dije"));
+// 9. Longitud de la palabra más larga
+
+// Input: "El zorro marrón salta"
+
+// Output: 6
+
+// Explicación: Separar las palabras y hallar la más larga.
+
+const longitudPalabraLarga = (string) => {
+  const array = string.split(" ");
+  let maxLongiitud = 0
+  for (let palabra of array){
+    console.log(palabra)
+  }
+  return maxLongiitud;
+};
+
+console.log(longitudPalabraLarga("EL zorro marron salta"));
