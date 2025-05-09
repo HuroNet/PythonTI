@@ -144,4 +144,19 @@ const longitudPalabraLarga = (string) => {
   return maxLongiitud;
 };
 
-console.log(longitudPalabraLarga("EL zorro marron salta"));
+
+// 🔹 10. Suma de los dígitos de un número
+
+//     Input: 1234
+
+//     Output: 10
+
+//     Explicación: 1 + 2 + 3 + 4 = 10
+
+const sumaDigitos = (digitos) =>{
+  const numeros = digitos.toString().split('')
+  console.log(numeros)
+  return 0
+}
+
+console.log(sumaDigitos(1234))
