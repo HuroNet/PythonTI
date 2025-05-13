@@ -156,9 +156,25 @@ const sumaDigitos = (digitos) => {
   const numeros = digitos.toString().split("");
 
   let total = 0;
-  for (let numero of numeros) {
-    total += Number(numero);
-  }
+  numeros.forEach(element => {
+    total+=Number(element)
+    
+  });
   return total;
 };
-console.log(sumaDigitos(1234));
+
+console.log(sumaDigitos(1234))
+// 🔹 11. Eliminar duplicados en una lista
+
+//     Input: [1, 2, 2, 3]
+
+//     Output: [1, 2, 3]
+
+//     Explicación: Usar set() o lógica para mantener solo elementos únicos.
+
+const eliminarDuplicados = (array) =>{
+  const result  = set(array                                                        )
+  
+  return result
+}
+// console.log(eliminarDuplicados([1,2,3,2,3]))
