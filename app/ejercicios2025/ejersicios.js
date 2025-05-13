@@ -144,7 +144,6 @@ const longitudPalabraLarga = (string) => {
   return maxLongiitud;
 };
 
-
 // 🔹 10. Suma de los dígitos de un número
 
 //     Input: 1234
@@ -153,12 +152,13 @@ const longitudPalabraLarga = (string) => {
 
 //     Explicación: 1 + 2 + 3 + 4 = 10
 
-const sumaDigitos = (digitos) =>{
-  const numeros = Number(digitos.toString().split(''))
-  
-  let total=0
- console.log(numeros)
-  return total
-}
+const sumaDigitos = (digitos) => {
+  const numeros = digitos.toString().split("");
 
-console.log(sumaDigitos(1234))
+  let total = 0;
+  for (let numero of numeros) {
+    total += Number(numero);
+  }
+  return total;
+};
+console.log(sumaDigitos(1234));
