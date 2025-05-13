@@ -154,9 +154,11 @@ const longitudPalabraLarga = (string) => {
 //     Explicación: 1 + 2 + 3 + 4 = 10
 
 const sumaDigitos = (digitos) =>{
-  const numeros = digitos.toString().split('')
-  console.log(numeros)
-  return 0
+  const numeros = Number(digitos.toString().split(''))
+  
+  let total=0
+ console.log(numeros)
+  return total
 }
 
 console.log(sumaDigitos(1234))
