@@ -156,14 +156,13 @@ const sumaDigitos = (digitos) => {
   const numeros = digitos.toString().split("");
 
   let total = 0;
-  numeros.forEach(element => {
-    total+=Number(element)
-    
+  numeros.forEach((element) => {
+    total += Number(element);
   });
   return total;
 };
 
-console.log(sumaDigitos(1234))
+// console.log(sumaDigitos(1234))
 // 🔹 11. Eliminar duplicados en una lista
 
 //     Input: [1, 2, 2, 3]
@@ -172,9 +171,41 @@ console.log(sumaDigitos(1234))
 
 //     Explicación: Usar set() o lógica para mantener solo elementos únicos.
 
-const eliminarDuplicados = (array) =>{
-  const result  = set(array                                                        )
-  
-  return result
-}
+const eliminarDuplicados = (array) => {
+  const result = [...new Set(array)];
+
+  return result;
+};
 // console.log(eliminarDuplicados([1,2,3,2,3]))
+
+// 1. Invertir una cadena
+
+// Input: "developer"
+// Output: "repoleved"
+
+const invertir_string = (string) => {
+  const array = string.split("");
+  let result = [];
+  for (let letra of array) {
+    result.unshift(letra);
+  }
+  return result;
+};
+// console.log(invertir_string("developer"))
+
+// 2. Comprobar si una palabra es palíndromo
+
+// Input: "racecar"
+// Output: true
+
+const comprobarPalindormo = (string) => {
+  const reverse = string.split("").reverse().join("");
+  if (reverse === string) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(comprobarPalindormo("racecar"));
+console.log(comprobarPalindormo("race"));
