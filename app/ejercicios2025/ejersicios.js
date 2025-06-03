@@ -207,5 +207,46 @@ const comprobarPalindormo = (string) => {
   }
 };
 
-console.log(comprobarPalindormo("racecar"));
-console.log(comprobarPalindormo("race"));
+
+// 4. Repetir una cadena N veces
+
+// Input: "abc", 3
+// Output: "abcabcabc"
+
+const repetirCadenaNVeces = (string,target) =>{
+  let resultado = ''
+  for (let i=0;i<3;i++){
+    resultado+=string
+  }
+  // return resultado
+  return string.repeat(target)
+}
+
+// console.log(repetirCadenaNVeces('abc',3))
+// 5. Encontrar el número más grande en un arreglo
+
+// Input: [3, 19, 8, 5]
+// Output: 19
+
+const numeroMasGrande=(array)=>{
+  let array1 = array.sort()
+  return array1[0]
+}
+// onsole.log(numeroMasGrande([3,19,8,5]))
+
+// 6. Ordenar arreglo sin usar .sort()
+
+// Input: [4, 2, 7, 1]
+// Output: [1, 2, 4, 7]
+
+const bubbleSort = (array) =>{
+  let size = array.length;
+  for (let i=0;i<size;i++){
+    for (let j=0;j<size-1;j++){
+      let temp = array[j]
+    }
+  }
+  return 0
+}
+
+console.log(bubbleSort([4,2,6,31,22]))
