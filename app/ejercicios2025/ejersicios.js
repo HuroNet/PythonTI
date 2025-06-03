@@ -243,10 +243,20 @@ const bubbleSort = (array) =>{
   let size = array.length;
   for (let i=0;i<size;i++){
     for (let j=0;j<size-1;j++){
-      let temp = array[j]
+      if(array[j]>array[j+1]){
+        let temp = array[j];
+        array[j]=array[j+1];
+        array[j+1]=temp
+      } 
     }
   }
-  return 0
+  return array
 }
 
-console.log(bubbleSort([4,2,6,31,22]))
+// console.log(bubbleSort([4,2,6,31,22]))
+
+// 6. Ordenar arreglo sin usar .sort()
+
+// Input: [4, 2, 7, 1]
+// Output: [1, 2, 4, 7]
+
