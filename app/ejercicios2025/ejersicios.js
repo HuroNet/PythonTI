@@ -309,13 +309,13 @@ const primeraMayuscula = (string) => {
 
 // Input: [1, 2, 3, 4], 1
 // Output: [4, 1, 2, 3]
-const rotarDerecha = (array,value) =>{
-  for(let i=0;i<value;i++){
-    const ultimo = array.pop()
-    array.unshift(ultimo)
+const rotarDerecha = (array, value) => {
+  for (let i = 0; i < value; i++) {
+    const ultimo = array.pop();
+    array.unshift(ultimo);
   }
-  return array
-}
+  return array;
+};
 
 // console.log(rotarDerecha([1,2,3,4],3))
 // 12. Contar ocurrencias de un elemento
@@ -323,26 +323,54 @@ const rotarDerecha = (array,value) =>{
 // Input: [1,2,3,2,2,4], 2
 // Output: 3
 
-const ocurrencias =(array,value) =>{
+const ocurrencias = (array, value) => {
   let result = {};
-  let contador = 0
-  for(element of array){
-    if(result[element]){
-      contador +=1;
-      result[element] +=1
-    }else{
-      result[element]=1
+  let contador = 0;
+  for (element of array) {
+    if (result[element]) {
+      contador += 1;
+      result[element] += 1;
+    } else {
+      result[element] = 1;
     }
   }
-  return  result
-}
+  return result;
+};
 // console.log(ocurrencias([1,2,3,2,2,4], 2))
 // 20. Filtrar solo palabras largas
 
 // Input: ["hola", "desarrollador", "web"], min = 5
 // Output: ["desarrollador"]
 
-const filtradoPalabrasLargas = (array, min) =>{
-  return 0
+const filtradoPalabrasLargas = (array, min) => {
+  for (element of array) {
+    if (element.length >= 5) {
+      return element;
+    }
+  }
+};
+// console.log(filtradoPalabrasLargas( ["hola", "desarrollador", "web"], 5))
+// 21. Fusionar dos arreglos sin duplicados
+
+// Input: [1,2,3], [3,4,5]
+// Output: [1,2,3,4,5]
+
+const fucionarArrays = (array1, array2) => {
+  let union = array1;
+   for (const elemento of array2) {
+    if (!union.includes(elemento)) {
+      console.log(elemento)
+    }
+  }
+  return union;
+};
+
+// 22. Encontrar el número que falta
+
+// Input: [1, 2, 4, 5]
+// Output: 3
+const numeroFaltante = (array) =>{
+  
 }
-console.log(filtradoPalabrasLargas( ["hola", "desarrollador", "web"], 5))
+
+console.log(numeroFaltante([1,2,4,5]))
